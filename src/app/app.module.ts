@@ -18,4 +18,12 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
+RouterModule.forRoot([
+  {
+    path: 'home',
+    component: AppComponent
+  }
+])
+
 export class AppModule { }
