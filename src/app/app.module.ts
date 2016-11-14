@@ -13,17 +13,19 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+
+  RouterModule.forRoot([
+    {
+      path: 'home',
+      component: AppComponent
+    }
+  ]),
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 
-RouterModule.forRoot([
-  {
-    path: 'home',
-    component: AppComponent
-  }
-])
 
 export class AppModule { }
