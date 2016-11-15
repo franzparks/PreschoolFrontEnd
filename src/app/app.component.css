@@ -1,0 +1,44 @@
+.b-primary-nav {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    margin-bottom: 16px;
+}
+.navbar {
+    border-radius: 3px;
+}
+
+.b-primary-nav .navbar-nav {
+    position: relative;
+    width: 100%;
+}
+.navbar-nav {
+    float: left;
+    margin: 0;
+}
+.navbar-nav {
+    margin: 8.5px -8px;
+}
+.nav {
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+ul, ol {
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.b-dropdown-grid-container {
+    min-width: 480px;
+    padding: 10px 0 17px 40px;
+}
+
+.dropdown-menu {
+    font-size: 13px;
+    list-style: outside none none;
+    text-align: left;
+}
