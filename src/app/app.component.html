@@ -1,44 +1,54 @@
-<div>
-	<section>
-	
-		<nav class="navbar navbar-light bg-primary">
-			<ul class="nav navbar-nav">
-			    <li class="nav-item active">
-			      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-			    </li>
-			    <li class="nav-item">
-			      <a class="nav-link" href="#">Features</a>
-			    </li>
-			    <li class="nav-item">
-			      <a class="nav-link" href="#">Pricing</a>
-			    </li>
-			    <li class="nav-item dropdown">
-			      <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			        Dropdown link
-			      </a>
-			      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-			        <a class="dropdown-item" href="#">Action</a>
-			        <a class="dropdown-item" href="#">Another action</a>
-			        <a class="dropdown-item" href="#">Something else here</a>
-			      </div>
-			    </li>
-			</ul>
-		</nav>
-	</section>
-	<div class="b-card-select-container fluid-container hidden-xs"> another div</div>
-	<nav class="navbar b-primary-nav">
-		<div class="container">
-			<ul class="nav navbar-nav">
-				<li class="active dropdown nav-item">J
-					<ul class="dropdown-menu menu">
-						<li class="b-dropdown-grid-container "><a class="nav-link dropdown-toggle main" href="">Hello</a></li>
-					</ul>
-				</li>
-				<li class="dropdown"><a class="dropdown-toggle" href="">Placeholder Link</a>
-				</li>
-				<li class="dropdown"><a class="dropdown-toggle " href="">Another one</a></li>
-			</ul>
-		</div>	
-	</nav>
-	
-</div>
+<div id="loggedInNavigation">
+
+  <div id="b-secondary-nav" class="b-secondary-nav hidden-xs">
+
+    <div class="container">
+      <nav class="navbar navbar-default hidden-xs b-secondary-navbar">
+        <div class="navbar-header">
+          <!-- ADA Skip Nav Link -->
+          <a class="sr-only sr-only-focusable b-skip-link" href="#bd">
+            <span class="skiplink-text">Skip to main content</span>
+          </a>
+        </div>
+        <div id="navbar">
+          <ul class="nav navbar-nav navbar-right">
+
+            <li>
+              <a data-auto="b-secondary-nav-contact-us" href="#">Contact us</a>
+            </li>
+
+            <li>
+              <a data-auto="b-secondary-nav-feedback" href="#">Feedback</a>
+            </li>
+
+            <li>
+              <a data-auto="b-secondary-nav-help" id="b-search-link" href="#" data-toggle="collapse" data-target="#b-search-bar"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Help</a>
+            </li>
+          
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container b-secondary-navbar-subnav" id="b-search-container">
+      <nav class="navbar navbar-default" role="navigation" id="submenu">
+        <ul class="nav navbar-nav collapse navbar-right" id="b-search-bar">
+          <li>
+            <form class="navbar-form" role="search" action="">
+              <div class="input-group">
+                <label for="searchBox" class="sr-only">Search for a help topic</label>
+                <input class="form-control" placeholder="Search for a help topic" name="keyWord" id="searchBox" type="text">
+                <div class="input-group-btn">
+                  <label for="srch-btn" class="sr-only">Search</label>
+                  <button class="btn btn-default" id="srch-btn" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+
+
+  </div>
