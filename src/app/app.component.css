@@ -3949,7 +3949,7 @@ tbody.collapse.in {
     transition-property: height, visibility;
     transition-timing-function: ease;
 }
-.caret {
+.caret1 {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-top: 4px solid;
@@ -9823,7 +9823,7 @@ table td[class*="col-"], table th[class*="col-"] {
     transform: rotate(-45deg);
     width: 9px;
 }
-.caret-right-icon {
+.caret-right-icon1 {
     border-bottom: 4px solid transparent;
     border-left: 4px solid;
     border-top: 4px solid transparent;
@@ -9831,7 +9831,7 @@ table td[class*="col-"], table th[class*="col-"] {
     margin-left: 4px;
     vertical-align: middle;
 }
-.caret-left-icon {
+.caret-left-icon1 {
     border-bottom: 4px solid transparent;
     border-right: 4px solid;
     border-top: 4px solid transparent;
