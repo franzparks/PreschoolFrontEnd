@@ -11,5 +11,7 @@ export class NavItemComponentComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  navLabel = 'Label';
+  subTitle = 'Nav Title';
+  navLinks = ['Link1', 'Link2', 'Link3'];
 }
