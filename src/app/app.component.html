@@ -86,8 +86,47 @@
           <a  href="#"   id="primaryHomeLink"><span> <i class="fa fa-home fa-fw" aria-hidden="true"></i></span> <span class="sr-only">Home</span></a>
         </li>
 
-        <app-nav-item-component ></app-nav-item-component>
-        <app-nav-item-component ></app-nav-item-component>
+        <li class=" dropdown">
+  <a  href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle main">{{navTitle}}<span class="caret"></span></a>
+
+  <ul class="dropdown-menu menu dropdown-menu-right">
+
+    <li [class]="navStyle">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3>{{navSubTitle}}</h3>
+        </div>
+        <div class="col-sm-4" *ngIf="navLinksCol1">
+          <ul>
+            <li *ngFor="let linkItem of navLinksCol1">
+              <a href="linkItem.ref" class="b-primary-nav-sublink nav-track">{{linkItem.label}}</a>
+            </li>
+          
+          </ul>
+        </div>
+        <div class="col-sm-4" *ngIf="navLinksCol2">
+          <ul>
+           <li *ngFor="let linkItem of navLinksCol2">
+              <a href="linkItem.ref" class="b-primary-nav-sublink nav-track">{{linkItem.label}}</a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-sm-4" *ngIf="navLinksCol3">
+          <ul>
+            <li *ngFor="let linkItem of navLinksCol3">
+              <a href="linkItem.ref" class="b-primary-nav-sublink nav-track">{{linkItem.label}}</a>
+            </li>
+  
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+</li>
+
+        <!--<app-nav-item-component ></app-nav-item-component>
+        <app-nav-item-component ></app-nav-item-component>-->
 
         <!--<li data-auto="primary-nav-payments" class="dropdown">
           <a aria-expanded="false" data-auto="nav-payments" href="javascript:void(0)" data-toggle="dropdown"                           class="dropdown-toggle main">Schools <span class="caret"></span></a>
