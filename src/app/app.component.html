@@ -91,30 +91,30 @@
 
   <ul class="dropdown-menu menu dropdown-menu-right">
 
-    <li [ngClass]="navStyle">
+    <li [ngClass]="navStyle" *ngFor="let navItem of navItems">
       <div class="row">
         <div class="col-sm-12">
           <h3>{{navSubTitle}}</h3>
         </div>
-        <div class="col-sm-4" *ngIf="navLinksCol1">
+        <div class="col-sm-4" *ngIf="navItem.navLinksCol1">
           <ul>
-            <li *ngFor="let linkItem of navLinksCol1">
+            <li *ngFor="let linkItem of navItem.navLinksCol1">
               <a href="linkItem.ref" class="b-primary-nav-sublink nav-track">{{linkItem.label}}</a>
             </li>
           
           </ul>
         </div>
-        <div class="col-sm-4" *ngIf="navLinksCol2">
+        <div class="col-sm-4" *ngIf="navItem.navLinksCol2">
           <ul>
-           <li *ngFor="let linkItem of navLinksCol2">
+           <li *ngFor="let linkItem of navItem.navLinksCol2">
               <a href="linkItem.ref" class="b-primary-nav-sublink nav-track">{{linkItem.label}}</a>
             </li>
             
           </ul>
         </div>
-        <div class="col-sm-4" *ngIf="navLinksCol3">
+        <div class="col-sm-4" *ngIf="navItem.navLinksCol3">
           <ul>
-            <li *ngFor="let linkItem of navLinksCol3">
+            <li *ngFor="let linkItem of navItem.navLinksCol3">
               <a href="linkItem.ref" class="b-primary-nav-sublink nav-track">{{linkItem.label}}</a>
             </li>
   
