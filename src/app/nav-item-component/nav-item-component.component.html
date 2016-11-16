@@ -1,7 +1,40 @@
-<p>
- {{navLabel}} 
-</p>
+<li class=" dropdown">
+  <a  href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle main">Song List<span class="caret"></span></a>
 
-<p *ngIf="subTitle">
- {{subTitle}} 
-</p>
+  <ul class="dropdown-menu menu dropdown-menu-right">
+    <li class="b-dropdown-grid-container b-dropdown-grid-container-three-column">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3>Songs</h3>
+        </div>
+        <div class="col-sm-4">
+          <ul>
+            <li>
+              <a href="#" class="b-primary-nav-sublink nav-track">By Theme</a>
+            </li>
+            <li>
+              <a href="#" class="b-primary-nav-sublink nav-track">By Scenario</a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <ul>
+            <li>
+              <a href="#" class="b-primary-nav-sublink nav-track">By Title</a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <ul>
+            <li>
+              <a href="#" class="b-primary-nav-sublink nav-track">By Artist</a>
+            </li>
+  
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+</li>
