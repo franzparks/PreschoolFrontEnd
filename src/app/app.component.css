@@ -1668,7 +1668,7 @@ td, th {
     font-family: "Glyphicons Halflings";
     src: url("/servicing/css/base/themes/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/servicing/css/base/themes/fonts/glyphicons-halflings-regular.woff") format("woff"), url("/servicing/css/base/themes/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/servicing/css/base/themes/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
-.glyphicon {
+/*.glyphicon1 {
     -moz-osx-font-smoothing: grayscale;
     display: inline-block;
     font-family: "Glyphicons Halflings";
@@ -1756,7 +1756,7 @@ td, th {
 .glyphicon-trash::before {
     content: "";
 }
-.glyphicon-home::before {
+.glyphicon-home1::before {
     content: "";
 }
 .glyphicon-file::before {
@@ -2278,6 +2278,7 @@ td, th {
 .glyphicon-tree-deciduous::before {
     content: "";
 }
+*/
 * {
     box-sizing: border-box;
 }
