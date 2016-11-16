@@ -87,5 +87,232 @@
   <div class="b-multi-card-container b-multi-card-hide hidden-xs" id="b-multi-card-container">
 
   </div>
+    <!-- Main Nav - Tablet & Desktop -->
+  <nav class="navbar b-primary-nav hidden-xs">
+    <div class="container">
+      <ul class="nav navbar-nav" id="b-primary-nav-links">
+        <li data-auto="primary-nav-home" class="active dropdown">
+          <a data-navtag="MAIN NAV:Home" data-track="main_NAV" data-auto="nav-home" href="/servicing/accountSummary"                   class="homeLinkAnchor nav-track" id="primaryHomeLink"><span class="glyphicon glyphicon-home"></span>                          <span class="sr-only">Home</span></a>
+        </li>
+        <li data-auto="primary-nav-payments" class="dropdown">
+          <a aria-expanded="false" data-auto="nav-payments" href="javascript:void(0)" data-toggle="dropdown"                           class="dropdown-toggle main">Payments <span class="caret"></span></a>
+          <ul class="dropdown-menu menu ">
+            <li id="payments-grid-container" class="b-dropdown-grid-container ">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3 data-auto="subnav-title-payments">Manage your payments</h3>
+                </div>
+                <div class="col-sm-12">
+                  <ul>
+                    <li>
+                      <a data-navtag="MAIN NAV:Payments:Make a payment" data-track="main_NAV" data-auto="subnav-  payments-onetime-payment" href="/servicing/Payment.action" class="b-primary-nav-sublink nav-track">Make a payment</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Payments:Repeat payments" data-track="main_NAV" data-auto="subnav-payments-repeat-payment" href="/servicing/RepeatPayment.action" class="b-primary-nav-sublink nav-track">Repeat payments</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Payments:Payment activity" data-track="main_NAV" data-auto="subnav-payments-payment-history" href="/servicing/Payment.action?history=" class="b-primary-nav-sublink nav-track">Payment activity</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li data-auto="primary-nav-activity-statements" class=" dropdown">
+          <a data-auto="nav-activity-statements" href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle main">Activity &amp; Statements <span class="caret"></span></a>
 
+          <ul class="dropdown-menu menu ">
+            <li id="activity-statements-grid-container" class="b-dropdown-grid-container ">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3 data-auto="subnav-title-activity-statements">Activity &amp; Statements</h3>
+                </div>
+                <div class="col-sm-12">
+                  <ul>
+                    <li>
+                      <a data-navtag="MAIN NAV:Activity &amp; Statements:Transactions" data-track="main_NAV" data-auto="subnav-activity-transactions" href="/servicing/activity" class="b-primary-nav-sublink nav-track">Transactions</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Activity &amp; Statements:Statements" data-track="main_NAV" data-auto="subnav-activity-statements" href="/servicing/mystatements?rnd=1479167435908" class="b-primary-nav-sublink nav-track">Statements</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Activity &amp; Statements:Spend analyzer" data-track="main_NAV" data-auto="subnav-activity-spendanalyzer" href="/servicing/spendAnalyzer?spendAnalyzerActivitySection" class="b-primary-nav-sublink nav-track">Spend analyzer</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li data-auto="primary-nav-rewards-benefits" class=" dropdown">
+          <a data-auto="nav-rewards-benefits" href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle main">Rewards &amp; Benefits <span class="caret"></span></a>
+          <ul class="dropdown-menu menu ">
+            <li id="rewards-benefits-grid-container" class="b-dropdown-grid-container ">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3 data-auto="subnav-title-rewards-benefits">Rewards &amp; Benefits</h3>
+                </div>
+                <div id="rewards-benefits-container">
+                  <div class="col-sm-6">
+                    <ul>
+                      <li>
+                        <a data-track="main_NAV" href="/servicing/rewardsHub" data-auto="subnav-rewards-benefits-center" class="b-primary-nav-sublink">
+                            Rewards &amp; Benefits Center
+                        </a>
+                      </li>
+                      <li>
+                        <a data-track="main_NAV" href="/servicing/rewardsHub?rewardsActivity=" data-auto="subnav-rewards-activity" class="b-primary-nav-sublink">
+                            Rewards activity
+                        </a>
+                      </li>
+                      <li>
+                        <a data-track="main_NAV" href="http://www.apple.com" target="_blank" data-auto="subnav-rewards-action" class="b-primary-nav-sublink">
+                            Start using my Points
+                        </a>
+                      </li>
+                      <li>
+                        <a data-track="main_NAV" href="/servicing/rewardsHub?earningRewards=" data-auto="subnav-rewards-earning" class="b-primary-nav-sublink">
+                            Earning Points
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6">
+                    <ul>
+                      <li>
+                        <a data-track="main_NAV" href="/servicing/rewardsHub?redeemBenefits=" data-auto="subnav-rewards-use" class="b-primary-nav-sublink">
+                            Using my Points
+                        </a>
+                      </li>
+                      <li>
+                        <a data-track="main_NAV" href="/servicing/rewardsHub?rewardsBenefits=" data-auto="subnav-rewards-card-benefits" class="b-primary-nav-sublink">
+                            My card benefits
+                        </a>
+                      </li>
+                      <li>
+                        <a data-track="main_NAV" href="/servicing/updateRedemptionOption" data-auto="subnav-rewards-preferences" class="b-primary-nav-sublink">
+                            Update your preferences
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li data-auto="primary-nav-services" class=" dropdown">
+          <a data-auto="nav-services" href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle main">Services <span class="caret"></span></a>
+          <ul class="dropdown-menu menu dropdown-menu-right">
+            <li id="services-grid-container" class="b-dropdown-grid-container b-dropdown-grid-container-three-column">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3 data-auto="subnav-title-services">Account services</h3>
+                </div>
+                <div class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a data-navtag="MAIN NAV:Services:Your FICO<sup>®</sup> Score" data-track="main_NAV" data-auto="subnav-services-ficoscore" href="/servicing/ficoScore" class="b-primary-nav-sublink nav-track">Your FICO<sup>®</sup> Score</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Services:My travel" data-track="main_NAV" data-auto="subnav-services-travel-notification" href="/servicing/travelNotification?start" class="b-primary-nav-sublink nav-track">My travel</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Services:Activated cards" data-track="main_NAV" data-auto="subnav-services-activate-card" href="/servicing/accountSettings#activateCard" class="b-primary-nav-sublink nav-track">Activated cards</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Services:Account nickname" data-track="main_NAV" data-auto="subnav-services-account-nickname" href="/servicing/accountSettings#nickname" class="b-primary-nav-sublink nav-track">Account nickname</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Services:Paperless statements" data-track="main_NAV" data-auto="subnav-services-paperless" href="/servicing/accountSettings#paperlessStatements" class="b-primary-nav-sublink nav-track">Paperless statements</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Services:Authorized users" data-track="main_NAV" data-auto="subnav-services-addauthroize-user" href="/servicing/accountSettings#addAuthorizedUser" class="b-primary-nav-sublink nav-track">Authorized users</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a data-navtag="MAIN NAV:Services:Privacy options" data-track="main_NAV" data-auto="subnav-services-privacy-options" href="/servicing/accountSettings#privacy" class="b-primary-nav-sublink nav-track">Privacy options</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Services:Alerts" data-track="main_NAV" data-auto="subnav-services-account-alerts" href="/servicing/accountSettings#emailMobileAlerts" class="b-primary-nav-sublink nav-track">Alerts</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Services:Balance transfer offers" data-track="main_NAV" data-auto="subnav-services-account-bt-offers" href="/servicing/accountSettings#btOffers" class="b-primary-nav-sublink nav-track">Balance transfer offers</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Services:Manage your PIN" data-track="main_NAV" data-auto="subnav-services-manage-pin" href="/servicing/accountSettings#managePIN" class="b-primary-nav-sublink nav-track">Manage your PIN</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Services:Change payment due date" data-track="main_NAV" data-auto="subnav-services-change-payment-due-date" href="/servicing/accountSettings#changePaymentDueDate" class="b-primary-nav-sublink nav-track">Change payment due date</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Services:Request replacement card" data-track="main_NAV" data-auto="subnav-services-request-replacement-card" href="/servicing/accountSettings#requestReplacementCard" class="b-primary-nav-sublink nav-track">Request replacement card</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-4">
+                  <ul>
+                    <li>
+                      <a data-navtag="MAIN NAV:Services:Request credit line increase" data-track="main_NAV" data-auto="subnav-services-creditline-increase" href="/servicing/accountSettings#creditLineIncrease" class="b-primary-nav-sublink nav-track">Request credit line increase</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Services:Order cash advance checks" data-track="main_NAV" data-auto="subnav-services-cash-advance-checks" href="/servicing/accountSettings#cashAdvanceChecks" class="b-primary-nav-sublink nav-track">Order cash advance checks</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Services:Cardmember Agreement" data-track="main_NAV" data-auto="subnav-services-cma-request" href="/servicing/accountSettings#cmaRequest" class="b-primary-nav-sublink nav-track">Cardmember Agreement</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Services:Credit 101" data-track="main_NAV" data-auto="subnav-services-credit-education101" href="/servicing/financialTools?redirectToCreditEducation101" class="b-primary-nav-sublink nav-track">Credit 101</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Services:Guide to benefits" data-track="main_NAV" data-auto="subnav-services-cardBenefits" href="/servicing/accountSettings#cardBenefits" class="b-primary-nav-sublink nav-track">Guide to benefits</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li data-auto="primary-nav-your-profile" class=" dropdown">
+          <a data-auto="nav-your-profile" href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle main">Your profile <span class="caret"></span></a>
+          <ul class="dropdown-menu menu dropdown-menu-right">
+            <li id="your-profile-grid-container" class="b-dropdown-grid-container ">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3 data-auto="subnav-title-your-profile">Your profile</h3>
+                </div>
+                <div class="col-sm-6">
+                  <ul>
+                    <li>
+                      <a data-navtag="MAIN NAV:Your profile:Address &amp; telephone" data-track="main_NAV" data-auto="subnav-profile-address-telephone" href="/servicing/Profile.action#profile-addressTelephone" class="b-primary-nav-sublink nav-track">Address &amp; telephone</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Your profile:Email address" data-track="main_NAV" data-auto="subnav-profile-email-address" href="/servicing/Profile.action#profile-emailAddress" class="b-primary-nav-sublink nav-track">Email address</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Your profile:Username" data-track="main_NAV" data-auto="subnav-profile-username" href="/servicing/Profile.action#profile-username" class="b-primary-nav-sublink nav-track">Username</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul>
+                    <li>
+                      <a data-navtag="MAIN NAV:Your profile:Password" data-track="main_NAV" data-auto="subnav-profile-password" href="/servicing/Profile.action#profile-password" class="b-primary-nav-sublink nav-track">Password</a>
+                    </li>
+                    <li>
+                      <a data-navtag="MAIN NAV:Your profile:Bank accounts" data-track="main_NAV" data-auto="subnav-profile-bank-accounts" href="/servicing/Profile.action#profile-bankAccounts" class="b-primary-nav-sublink nav-track">Bank accounts</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
   </div>
