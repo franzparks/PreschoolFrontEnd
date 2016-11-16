@@ -89,7 +89,7 @@
         <li class=" dropdown" *ngFor="let navItem of navItems">
         <a  href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle main">{{navItem.navTitle}}<span class="caret"></span></a>
 
-          <ul class="dropdown-menu menu dropdown-menu-right">
+          <ul class="dropdown-menu menu dropdown-menu-left">
 
             <li [ngClass]="navItem.navLinksCol3 ?  navStyleThreeCol : navStyleOneCol" >
               <div class="row">

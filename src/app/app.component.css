@@ -6209,15 +6209,15 @@ span.error {
     font-family: "Barclaycard Co Light","Open Sans",tahoma,helvetica,arial,clean,sans-serif;
     font-size: 21px;
     margin-bottom: 17px;
-    text-align: right;
+    text-align: left;
 }
 .b-dropdown-grid-container ul {
     list-style: outside none none;
-    padding-left: 0;
+    padding-left: 20px;
 }
 .b-dropdown-grid-container ul li {
     border-top: 1px solid #eee;
-    margin-right: 40px;
+    margin-left: 40px;
     padding-bottom: 10px;
     padding-top: 10px;
 }
