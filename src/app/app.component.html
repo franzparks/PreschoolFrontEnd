@@ -86,12 +86,12 @@
           <a  href="#"   id="primaryHomeLink"><span> <i class="fa fa-home fa-fw" aria-hidden="true"></i></span> <span class="sr-only">Home</span></a>
         </li>
 
-        <li class=" dropdown">
+        <li class=" dropdown" *ngFor="let navItem of navItems">
   <a  href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle main">{{title}}<span class="caret"></span></a>
 
   <ul class="dropdown-menu menu dropdown-menu-right">
 
-    <li [ngClass]="navStyle" *ngFor="let navItem of navItems">
+    <li [ngClass]="navStyle" >
       <div class="row">
         <div class="col-sm-12">
           <h3>{{navSubTitle}}</h3>
