@@ -39,6 +39,8 @@ const NAVITEMS : NavItem[] = [
 export class AppComponent {
 
   title = 'Welcome To Preschool Rater';
+  menuStyleLeft = 'dropdown-menu menu dropdown-menu-left';
+  menuStyleRight = 'dropdown-menu menu dropdown-menu-right';
   navStyleOneCol = 'b-dropdown-grid-container';
   navStyleTwoCol = 'b-dropdown-grid-container b-dropdown-grid-container-two-column';
   navStyleThreeCol = 'b-dropdown-grid-container b-dropdown-grid-container-three-column';
