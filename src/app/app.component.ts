@@ -8,7 +8,7 @@ import {NavItem} from './nav-item';
 
 })
 
-export const NAV-ITEMS = [
+export const NAV-ITEMS : NavItem[] = [
 
 	{
 		navTitle  = 'Main Title1',
