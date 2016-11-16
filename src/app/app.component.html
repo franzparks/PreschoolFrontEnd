@@ -87,14 +87,14 @@
         </li>
 
         <li class=" dropdown" *ngFor="let navItem of navItems">
-  <a  href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle main">{{title}}<span class="caret"></span></a>
+  <a  href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle main">{{navItem.navTitle}}<span class="caret"></span></a>
 
   <ul class="dropdown-menu menu dropdown-menu-right">
 
     <li [ngClass]="navStyle" >
       <div class="row">
         <div class="col-sm-12">
-          <h3>{{navSubTitle}}</h3>
+          <h3>{{navItem.navSubTitle}}</h3>
         </div>
         <div class="col-sm-4" *ngIf="navItem.navLinksCol1">
           <ul>
