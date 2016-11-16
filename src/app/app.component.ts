@@ -10,15 +10,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   title = 'Welcome To Preschool Rater';
-  navTitle : string;
-  navSubTitle : string;
+  navTitle : string = 'One';
+  navSubTitle : string = 'Two';
   navLinksCol1 : any[];
   navLinksCol2 : any[];
   navLinksCol3 : any[];
 
   constructor(){
-    this.navTitle = '';
-    this.navSubTitle = '';
+    this.navTitle = 'Hey';
+    this.navSubTitle = 'HEllo';
   	this.navLinksCol1 = [];
   	this.navLinksCol2 = [];
   	this.navLinksCol3 = [];
