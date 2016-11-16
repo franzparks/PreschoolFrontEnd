@@ -39,13 +39,14 @@ const NAVITEMS : NavItem[] = [
 export class AppComponent {
 
   title = 'Welcome To Preschool Rater';
+  navStyleOneCol = 'b-dropdown-grid-container';
+  navStyleTwoCol = 'b-dropdown-grid-container b-dropdown-grid-container-two-column';
+  navStyleThreeCol = 'b-dropdown-grid-container b-dropdown-grid-container-three-column';
   navItems : NavItem[] = [];
 
   constructor(){
     this.navItems = NAVITEMS;
   }
-
-  //navStyle = (this.navLinksCol2 !== [] ? 'b-dropdown-grid-container b-dropdown-grid-container-three-column' : //'b-dropdown-grid-container ' );
 
   
 }
