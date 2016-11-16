@@ -11,7 +11,9 @@ export class NavItemComponentComponent implements OnInit {
 
   ngOnInit() {
   }
-  navLabel = 'Label';
-  subTitle = 'Nav Title';
-  navLinks = ['Link1', 'Link2', 'Link3'];
+  navLabel : string = 'Label';
+  subTitle : string = 'nav-title';
+  navLinksCol1 : any[] = [{ref:'', label:''}, {ref:'', label:''}, {ref:'', label:''}];
+  navLinksCol2 : any[] = [{ref:'', label:''}, {ref:'', label:''}, {ref:'', label:''}];
+  navLinksCol3 : any[] = [{ref:'', label:''}, {ref:'', label:''}, {ref:'', label:''}];
 }
