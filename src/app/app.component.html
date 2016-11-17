@@ -84,7 +84,7 @@
 
       <ul class="nav navbar-nav" id="b-primary-nav-links">
         <li  class="active dropdown">
-          <a  routerLink="home"   id="primaryHomeLink"><span> <i class="fa fa-home fa-fw" aria-hidden="true"></i></span> <span class="sr-only">Home</span></a>
+          <a  routerLink="/schools"   id="primaryHomeLink"><span> <i class="fa fa-home fa-fw" aria-hidden="true"></i></span> <span class="sr-only">Home</span></a>
         </li>
 
         <li class=" dropdown" *ngFor="let navItem of navItems">
@@ -129,8 +129,9 @@
       </ul>
     </div>
   </nav>
+<div class="b-app-body1">
+  <router-outlet></router-outlet>
+</div>
 
-<router-outlet></router-outlet>
-  
   </div>
 
