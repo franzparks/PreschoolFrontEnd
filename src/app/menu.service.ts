@@ -38,7 +38,7 @@ export class MenuService {
   //navItems : NavItem[] = [];
   constructor() { }
 
-  getNavItems() : NavItem[] {
+  getNavItems()  {
   	return NAVITEMS;
   }
 
