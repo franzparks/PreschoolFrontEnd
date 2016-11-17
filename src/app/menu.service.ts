@@ -34,11 +34,11 @@ const NAVITEMS : NavItem[] = [
 @Injectable()
 export class MenuService {
   
-  navItems : NavItem[] = [];
+  //navItems : NavItem[] = [];
   constructor() { }
 
   getNavItems() : NavItem[] {
-  	return this.navItems;
+  	return NAVITEMS;
   }
 
 }
