@@ -11,6 +11,7 @@ import { ParentingComponent } from './parenting/parenting.component';
 import { BooksComponent } from './books/books.component';
 import { SongsComponent } from './songs/songs.component';
 import { ActivitiesComponent } from './activities/activities.component';
+import { ToysComponent } from './toys/toys.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ActivitiesComponent } from './activities/activities.component';
     BooksComponent,
     SongsComponent,
     ActivitiesComponent,
+    ToysComponent,
     
   ],
   imports: [
