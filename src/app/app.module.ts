@@ -20,8 +20,8 @@ import { SchoolsComponent } from './schools/schools.component';
     HttpModule,
 
   RouterModule.forRoot([
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home',  component: AppComponent },
+  //{ path: '', redirectTo: '/home', pathMatch: 'full' },
+  //{ path: 'home',  component: AppComponent },
   { path: 'schools',  component: SchoolsComponent },
   ]),
 
