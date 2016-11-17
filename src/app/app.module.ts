@@ -12,6 +12,7 @@ import { BooksComponent } from './books/books.component';
 import { SongsComponent } from './songs/songs.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { ToysComponent } from './toys/toys.component';
+import { SafetyComponent } from './safety/safety.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ToysComponent } from './toys/toys.component';
     SongsComponent,
     ActivitiesComponent,
     ToysComponent,
+    SafetyComponent,
     
   ],
   imports: [
