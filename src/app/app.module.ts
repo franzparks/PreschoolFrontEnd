@@ -20,6 +20,7 @@ import { MenuService } from './menu.service';
   RouterModule.forRoot([
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home',  component: AppComponent },
+  { path: 'schools',  component: AppComponent },
   ]),
 
   ],
