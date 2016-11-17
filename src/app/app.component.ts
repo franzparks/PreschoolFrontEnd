@@ -50,7 +50,7 @@ export class AppComponent {
   navItems : NavItem[] = [];
 
   constructor( private menuService : MenuService){
-    this.navItems = menuService.getNavItems();
+    this.navItems = this.menuService.getNavItems();
   }
 
   

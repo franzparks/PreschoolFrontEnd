@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { NavItem } from './nav-item';
 
 const NAVITEMS : NavItem[] = [
 
