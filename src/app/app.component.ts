@@ -13,7 +13,7 @@ import { MenuService } from './menu.service';
 
 export class AppComponent {
 
-  title = 'Welcome To Preschool Rater';
+  title = 'Welcome Golden Five';
   menuStyleLeft = 'dropdown-menu menu dropdown-menu-left';
   menuStyleRight = 'dropdown-menu menu dropdown-menu-right';
   navStyleOneCol = 'b-dropdown-grid-container';
