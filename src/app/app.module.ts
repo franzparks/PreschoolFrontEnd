@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { NavItemComponentComponent } from './nav-item-component/nav-item-component.component';
 import { MenuService } from './menu.service';
 
 @NgModule({
