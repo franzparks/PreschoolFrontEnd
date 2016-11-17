@@ -20,7 +20,7 @@ export const NAVITEMS : NavItem[] = [
 	},
 	{
 		id: 3,
-		navTitle  : 'Childrens' Books',
+		navTitle  : 'Childrens\' Books',
 		navSubTitle  : 'Books For Children',
 		navLinksCol1  : [{ref:'url', label:'By Age'}, {ref:'url', label:'By Theme'}],
 		navLinksCol2 : [{ref:'url', label:'By Award'}],
