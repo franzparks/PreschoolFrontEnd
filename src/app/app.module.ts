@@ -14,6 +14,7 @@ import { ActivitiesComponent } from './activities/activities.component';
 import { ToysComponent } from './toys/toys.component';
 import { SafetyComponent } from './safety/safety.component';
 import { BookService } from './book.service';
+import { SchoolService } from './school.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,6 @@ import { BookService } from './book.service';
     ActivitiesComponent,
     ToysComponent,
     SafetyComponent,
-    BookService
     
   ],
   imports: [
@@ -45,7 +45,7 @@ import { BookService } from './book.service';
   ]),
 
   ],
-  providers: [MenuService, BookService],
+  providers: [MenuService, BookService, SchoolService],
   bootstrap: [AppComponent]
 })
 
