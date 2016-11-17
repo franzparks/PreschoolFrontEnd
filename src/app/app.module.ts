@@ -13,6 +13,7 @@ import { SongsComponent } from './songs/songs.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { ToysComponent } from './toys/toys.component';
 import { SafetyComponent } from './safety/safety.component';
+import { BookService } from './book.service';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SafetyComponent } from './safety/safety.component';
     ActivitiesComponent,
     ToysComponent,
     SafetyComponent,
+    BookService
     
   ],
   imports: [
@@ -43,7 +45,7 @@ import { SafetyComponent } from './safety/safety.component';
   ]),
 
   ],
-  providers: [MenuService],
+  providers: [MenuService, BookService],
   bootstrap: [AppComponent]
 })
 
