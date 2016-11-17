@@ -7,11 +7,13 @@ import { RouterModule }   from '@angular/router';
 import { AppComponent } from './app.component';
 import { MenuService } from './menu.service';
 import { SchoolsComponent } from './schools/schools.component';
+import { ParentingComponent } from './parenting/parenting.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SchoolsComponent,
+    ParentingComponent,
     
   ],
   imports: [
