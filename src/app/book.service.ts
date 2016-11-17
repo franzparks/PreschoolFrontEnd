@@ -5,4 +5,8 @@ export class BookService {
 
   constructor() { }
 
+  getBooks() {
+  
+  }
+
 }
