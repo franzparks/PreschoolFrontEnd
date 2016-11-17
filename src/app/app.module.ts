@@ -6,10 +6,12 @@ import { RouterModule }   from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { MenuService } from './menu.service';
+import { SchoolsComponent } from './schools/schools.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    SchoolsComponent,
     
   ],
   imports: [
