@@ -22,7 +22,7 @@ import { SchoolsComponent } from './schools/schools.component';
   RouterModule.forRoot([
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home',  component: AppComponent },
-  { path: 'schools',  component: AppComponent },
+  { path: 'schools',  component: SchoolsComponent },
   ]),
 
   ],
