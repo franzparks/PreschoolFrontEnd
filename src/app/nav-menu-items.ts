@@ -26,7 +26,7 @@ export const NAVITEMS : NavItem[] = [
 		navSubTitle  : 'Books For Children',
 		navLinksCol1  : [{ref:'url', label:'By Age'}, {ref:'url', label:'By Theme'}],
 		navLinksCol2 : [{ref:'url', label:'By Award'}],
-        navLinksCol3 : [{ref:'url', label:'Link7'}, {ref:'url', label:'Link8'}, {ref:'url', label:'Link9'}]
+        navLinksCol3 : []
 
 	},
 	{
