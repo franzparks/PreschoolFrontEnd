@@ -6,6 +6,7 @@ import { RouterModule }   from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavItemComponentComponent } from './nav-item-component/nav-item-component.component';
+import { MenuService } from './menu-service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { NavItemComponentComponent } from './nav-item-component/nav-item-compone
   ]),
 
   ],
-  providers: [],
+  providers: [MenuService],
   bootstrap: [AppComponent]
 })
 
