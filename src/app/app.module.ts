@@ -10,7 +10,6 @@ import { MenuService } from './menu.service';
 @NgModule({
   declarations: [
     AppComponent,
-    NavItemComponentComponent,
     
   ],
   imports: [
