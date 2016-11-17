@@ -35,6 +35,12 @@ import { SafetyComponent } from './safety/safety.component';
   //{ path: '', redirectTo: '/home', pathMatch: 'full' },
   //{ path: 'home',  component: AppComponent },
   { path: 'schools',  component: SchoolsComponent },
+  { path: 'parenting',  component: ParentingComponent },
+  { path: 'books',  component: BooksComponent },
+  { path: 'songs',  component: SongsComponent },
+  { path: 'activities',  component: ActivitiesComponent },
+  { path: 'toys',  component: ToysComponent },
+  { path: 'safety',  component: SafetyComponent },
   ]),
 
   ],
