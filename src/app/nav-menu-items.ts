@@ -1,3 +1,5 @@
+import { NavItem } from './nav-item';
+
 export const NAVITEMS : NavItem[] = [
 
 	{
