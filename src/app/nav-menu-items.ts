@@ -58,8 +58,8 @@ export const NAVITEMS : NavItem[] = [
 	},
 	{
 		id: 7,
-		navTitle  : 'Safety &amp; Health',
-		navSubTitle  : 'Safety &amp; Health',
+		navTitle  : 'Safety And Health',
+		navSubTitle  : 'Safety And Health',
 		navLinksCol1  : [{ref:'url', label:'Product Reviews'}, {ref:'url', label:'Nutrition Guide'}],
 		navLinksCol2 : [{ref:'url', label:'Recipes'}],
         navLinksCol3 : []
