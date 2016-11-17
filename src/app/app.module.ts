@@ -33,7 +33,6 @@ import { SafetyComponent } from './safety/safety.component';
 
   RouterModule.forRoot([
   { path: '', redirectTo: '/schools', pathMatch: 'full' },
-  //{ path: 'home',  component: AppComponent },
   { path: 'schools',  component: SchoolsComponent },
   { path: 'parenting',  component: ParentingComponent },
   { path: 'books',  component: BooksComponent },
