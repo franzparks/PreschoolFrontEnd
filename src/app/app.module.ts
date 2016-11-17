@@ -9,6 +9,7 @@ import { MenuService } from './menu.service';
 import { SchoolsComponent } from './schools/schools.component';
 import { ParentingComponent } from './parenting/parenting.component';
 import { BooksComponent } from './books/books.component';
+import { SongsComponent } from './songs/songs.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { BooksComponent } from './books/books.component';
     SchoolsComponent,
     ParentingComponent,
     BooksComponent,
+    SongsComponent,
     
   ],
   imports: [
