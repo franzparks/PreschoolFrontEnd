@@ -18,10 +18,8 @@ import { MenuService } from './menu.service';
     HttpModule,
 
   RouterModule.forRoot([
-    {
-      path: 'home',
-      component: AppComponent
-    }
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home',  component: AppComponent },
   ]),
 
   ],
