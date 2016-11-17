@@ -49,7 +49,7 @@ export class AppComponent {
   navStyleThreeCol = 'b-dropdown-grid-container b-dropdown-grid-container-three-column';
   navItems : NavItem[] = [];
 
-  constructor( let menuService : MenuService){
+  constructor( private menuService : MenuService){
     this.navItems = menuService.getNavItems();
   }
 
