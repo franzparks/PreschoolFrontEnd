@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 
 import {Book} from './book';
+import { BOOKS } from './books/mock-books';
 
 @Injectable()
 export class BookService {
 
-  books : Book[] = [];
+  books : Book[] = BOOKS;
 
   constructor() { }
 

@@ -1,6 +1,6 @@
 import { Book } from '../book';
 
-export const Books : Book[] = [
+export const BOOKS : Book[] = [
 
 	{
 		id: 1,
