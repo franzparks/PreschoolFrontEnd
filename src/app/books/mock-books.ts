@@ -9,34 +9,34 @@ export const BOOKS : Book[] = [
 	},
 	{	
 		id: 2,
-		name : 'Diary of a Wimpy Kid',
-		author  : 'Someone',
+		name : 'Tale of Two Cities',
+		author  : 'Charles Dickens',
 	},
 	{
 		id: 3,
-		name : 'Diary of a Wimpy Kid',
-		author  : 'Someone',
+		name : 'Oliver Twist',
+		author  : 'Charles Dickens',
 	},
 	{
 		id: 4,
-		name : 'Diary of a Wimpy Kid',
-		author  : 'Someone',
+		name : 'The Buttefly',
+		author  : 'Boyi Sun',
 
 	},
 	{
 		id: 5,
-		name : 'Diary of a Wimpy Kid',
-		author  : 'Someone',
+		name : 'Purple Roses',
+		author  : 'Clarissa Phiri',
 
 	},
 	{	
 		id: 6,
-		name : 'Diary of a Wimpy Kid',
-		author  : 'Someone',
+		name : 'Adventures of Sherlock Holmes',
+		author  : 'Sir Conon Doyle',
 	},
 	{
 		id: 7,
-		name : 'Diary of a Wimpy Kid',
-		author  : 'Someone',
+		name : 'Dancing in the Sun',
+		author  : 'Clarissa Phiri',
 	},
 ];
