@@ -1,0 +1,8 @@
+.books {
+	padding: 20px;
+	color: #eee;
+	max-height: 120px;
+	min-height: 120px;
+	background-color: #607D8B;
+	border-radius: 2px;
+}
