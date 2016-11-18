@@ -14,7 +14,7 @@ export class BooksComponent implements OnInit {
 	constructor(private bookService : BookService) { }
 
 	ngOnInit() {
-		this.bookService.getBooks().then(books => this.books = books.slice(1, 5));
+		this.bookService.getBooks().then(books => this.books = books.slice(0, 7));
 	}
 
 }
