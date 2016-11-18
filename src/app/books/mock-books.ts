@@ -1,6 +1,6 @@
-import { NavItem } from './nav-item';
+import { Book } from '../book';
 
-export const NAVITEMS : NavItem[] = [
+export const Books : Book[] = [
 
 	{
 		id: 1,
