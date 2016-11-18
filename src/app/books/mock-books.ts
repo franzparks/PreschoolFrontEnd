@@ -39,4 +39,9 @@ export const BOOKS : Book[] = [
 		name : 'Dancing in the Sun',
 		author  : 'Clarissa Phiri',
 	},
+	{
+		id: 8,
+		name : 'Sheep Among Wolves',
+		author  : 'Clarissa Phiri',
+	},
 ];
