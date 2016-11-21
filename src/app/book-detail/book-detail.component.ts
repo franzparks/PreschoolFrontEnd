@@ -29,4 +29,9 @@ export class BookDetailComponent implements OnInit {
 		.subscribe(book => this.book = book);
 	}
 
+	goBack(): void {
+  		this.location.back();
+	}
+
+
 }
