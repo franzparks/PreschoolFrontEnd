@@ -33,16 +33,13 @@ import { AppRoutingModule }     from './app-routing.module';
     RecipeComponent,
     SchoolDetailComponent,
     BookDetailComponent,
-    AppRoutingModule
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-
-  RouterModule.forRoot([
-  
-  ]),
+    AppRoutingModule,
 
   ],
   providers: [MenuService, BookService, SchoolService],
