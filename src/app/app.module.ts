@@ -18,6 +18,7 @@ import { SchoolService } from './school.service';
 import { RecipeComponent } from './recipes/recipes.component';
 import { SchoolDetailComponent } from './school-detail/school-detail.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
+import { AppRoutingModule }     from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
     RecipeComponent,
     SchoolDetailComponent,
     BookDetailComponent,
-    
+    AppRoutingModule
   ],
   imports: [
     BrowserModule,
@@ -40,16 +41,7 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
     HttpModule,
 
   RouterModule.forRoot([
-  { path: '', redirectTo: '/books', pathMatch: 'full' },
-  { path: 'schools',  component: SchoolsComponent },
-  {path: 'detail/:id', component: SchoolDetailComponent},
-  { path: 'parenting',  component: ParentingComponent },
-  { path: 'books',  component: BooksComponent },
-  {path: 'book/:id', component: BookDetailComponent},
-  { path: 'songs',  component: SongsComponent },
-  { path: 'activities',  component: ActivitiesComponent },
-  { path: 'toys',  component: ToysComponent },
-  { path: 'safety',  component: SafetyComponent },
+  
   ]),
 
   ],
