@@ -6,12 +6,17 @@ import { BOOKS } from './books/mock-books';
 @Injectable()
 export class BookService {
 
-  books : Book[] = BOOKS;
+	books : Book[] = BOOKS;
 
-  constructor() { }
+	constructor() { }
 
-  getBooks() : Promise<Book[]> {
-  	return Promise.resolve(this.books);
-  }
+	getBooks() : Promise<Book[]> {
+	  	return Promise.resolve(this.books);
+	}
+
+	getBook(id: number): Promise<Book> {
+	  	return this.getBooks()
+	  				.then(books => books.find(book => book.id === id));
+	}
 
 }
