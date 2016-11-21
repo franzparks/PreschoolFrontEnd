@@ -26,3 +26,10 @@ const routes: Routes = [
   	{ path: 'safety',  component: SafetyComponent },
 
 ];
+
+@NgModule({
+  imports: [ RouterModule.forRoot(routes) ],
+  exports: [ RouterModule ]
+})
+
+export class AppRoutingModule {}
