@@ -4,7 +4,7 @@
 			<li class="bcus-card-results__item bcus-card-results__grid-item" *ngFor="let book of books">
         		<div class="bcus-card-results__grid-item-inner">
 
-          			<a class="bcus-card-results__card-link" [routerLink]="['/detail', book.id]" alt="image" >
+          			<a class="bcus-card-results__card-link" [routerLink]="['/book', book.id]" alt="image" >
             			<span class="bcus-card-results__grid-cta-container">
                             <h1 class="bcus-card-results__grid-card-name">
 	                            <span class="bcus-card-results__card-name-part bcus-card-results__card-name-part-one">{{book.name}}</span>
