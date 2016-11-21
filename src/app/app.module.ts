@@ -15,7 +15,7 @@ import { ToysComponent } from './toys/toys.component';
 import { SafetyComponent } from './safety/safety.component';
 import { BookService } from './book.service';
 import { SchoolService } from './school.service';
-import { RecipeComponent } from './recipe/recipe.component';
+import { RecipeComponent } from './recipes/recipes.component';
 import { SchoolDetailComponent } from './school-detail/school-detail.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
 
