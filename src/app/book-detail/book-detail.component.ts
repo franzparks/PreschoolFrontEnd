@@ -9,9 +9,10 @@ import { BookService } from '../book.service';
 import {Book} from '../book';
 
 @Component({
-  selector: 'app-book-detail',
-  templateUrl: './book-detail.component.html',
-  styleUrls: ['./book-detail.component.css']
+	moduleId: module.id,
+	selector: 'app-book-detail',
+	templateUrl: './book-detail.component.html',
+	styleUrls: ['./book-detail.component.css']
 })
 export class BookDetailComponent implements OnInit {
 
