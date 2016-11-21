@@ -17,7 +17,11 @@ export class BookDetailComponent implements OnInit {
 
 	@Input() book: Book;
 
-	constructor() { }
+	constructor(
+		private bookService : BookService,
+		private route : ActivatedRoute,
+		private location: Location
+	) { }
 
 	ngOnInit() {
 	}
