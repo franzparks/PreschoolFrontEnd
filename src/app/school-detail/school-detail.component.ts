@@ -10,7 +10,7 @@ import {School} from '../school';
 
 
 @Component({
-	moduleId: module.id,
+	moduleId: "schoolDetail",
   	selector: 'school-detail',
   	templateUrl: './school-detail.component.html',
   	styleUrls: ['./school-detail.component.css']

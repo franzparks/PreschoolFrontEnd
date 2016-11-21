@@ -9,7 +9,7 @@ import { BookService } from '../book.service';
 import {Book} from '../book';
 
 @Component({
-	moduleId: module.id,
+	moduleId: "bookDetail",
 	selector: 'book-detail',
 	templateUrl: './book-detail.component.html',
 	styleUrls: ['./book-detail.component.css']
