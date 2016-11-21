@@ -10,7 +10,7 @@ export class SchoolService {
 	  
 	constructor() { }
 
-	getBooks() : Promise<School[]> {
+	getSchools() : Promise<School[]> {
 		return Promise.resolve(this.schools);
 	}
 
