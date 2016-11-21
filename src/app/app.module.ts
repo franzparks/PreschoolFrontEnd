@@ -16,6 +16,7 @@ import { SafetyComponent } from './safety/safety.component';
 import { BookService } from './book.service';
 import { SchoolService } from './school.service';
 import { RecipeComponent } from './recipe/recipe.component';
+import { SchoolDetailComponent } from './school-detail/school-detail.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { RecipeComponent } from './recipe/recipe.component';
     ToysComponent,
     SafetyComponent,
     RecipeComponent,
+    SchoolDetailComponent,
     
   ],
   imports: [
