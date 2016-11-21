@@ -40,6 +40,7 @@ import { SchoolDetailComponent } from './school-detail/school-detail.component';
   RouterModule.forRoot([
   { path: '', redirectTo: '/books', pathMatch: 'full' },
   { path: 'schools',  component: SchoolsComponent },
+  {path: 'detail/:id', component: SchoolDetailComponent},
   { path: 'parenting',  component: ParentingComponent },
   { path: 'books',  component: BooksComponent },
   { path: 'songs',  component: SongsComponent },
