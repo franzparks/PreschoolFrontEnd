@@ -1,5 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+import { ActivatedRoute, Params }   from '@angular/router';
+import { Location }                 from '@angular/common';
+import 'rxjs/add/operator/switchMap';
+
+import { BookService } from '../book.service';
+
 import {Book} from '../book';
 
 @Component({
@@ -10,7 +16,7 @@ import {Book} from '../book';
 export class BookDetailComponent implements OnInit {
 
 	@Input() book: Book;
-	
+
 	constructor() { }
 
 	ngOnInit() {
