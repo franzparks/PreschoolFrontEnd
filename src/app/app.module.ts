@@ -17,6 +17,7 @@ import { BookService } from './book.service';
 import { SchoolService } from './school.service';
 import { RecipeComponent } from './recipe/recipe.component';
 import { SchoolDetailComponent } from './school-detail/school-detail.component';
+import { BookDetailComponent } from './book-detail/book-detail.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { SchoolDetailComponent } from './school-detail/school-detail.component';
     SafetyComponent,
     RecipeComponent,
     SchoolDetailComponent,
+    BookDetailComponent,
     
   ],
   imports: [
