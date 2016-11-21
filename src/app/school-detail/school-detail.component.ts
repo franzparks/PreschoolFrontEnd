@@ -11,7 +11,7 @@ import {School} from '../school';
 
 @Component({
 	moduleId: module.id,
-  	selector: 'app-school-detail',
+  	selector: 'school-detail',
   	templateUrl: './school-detail.component.html',
   	styleUrls: ['./school-detail.component.css']
 })

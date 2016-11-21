@@ -10,7 +10,7 @@ import {Book} from '../book';
 
 @Component({
 	moduleId: module.id,
-	selector: 'app-book-detail',
+	selector: 'book-detail',
 	templateUrl: './book-detail.component.html',
 	styleUrls: ['./book-detail.component.css']
 })
