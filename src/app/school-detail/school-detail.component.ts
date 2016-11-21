@@ -32,4 +32,9 @@ export class SchoolDetailComponent implements OnInit {
 
 	}
 
+	goBack(): void {
+ 		this.location.back();
+	}
+
+
 }
