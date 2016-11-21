@@ -17,7 +17,12 @@ export class SchoolDetailComponent implements OnInit {
 
 	@Input() school: School;	
 
-	constructor() { }
+	constructor(
+		private schoolService : SchoolService,
+		private route : ActivatedRoute,
+		private location: Location
+
+	) { }
 
 	ngOnInit() {
 
