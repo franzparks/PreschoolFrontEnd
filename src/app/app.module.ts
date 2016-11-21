@@ -45,6 +45,7 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
   {path: 'detail/:id', component: SchoolDetailComponent},
   { path: 'parenting',  component: ParentingComponent },
   { path: 'books',  component: BooksComponent },
+  {path: 'detail/:id', component: BookDetailComponent},
   { path: 'songs',  component: SongsComponent },
   { path: 'activities',  component: ActivitiesComponent },
   { path: 'toys',  component: ToysComponent },
