@@ -36,7 +36,7 @@ import { RecipeComponent } from './recipe/recipe.component';
     HttpModule,
 
   RouterModule.forRoot([
-  { path: '', redirectTo: '/schools', pathMatch: 'full' },
+  { path: '', redirectTo: '/books', pathMatch: 'full' },
   { path: 'schools',  component: SchoolsComponent },
   { path: 'parenting',  component: ParentingComponent },
   { path: 'books',  component: BooksComponent },
