@@ -27,7 +27,7 @@ export class SchoolDetailComponent implements OnInit {
 
 	ngOnInit() {
 		this.route.params
-		.switchMap((Params: Params) => this.schoolService.getSchool(+params['id']))
+		.switchMap((params: Params) => this.schoolService.getSchool(+params['id']))
 		.subscribe(school => this.school = school);
 
 	}
