@@ -7,7 +7,7 @@ import { MenuService } from './menu.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: [String('../styles.css')],
 
 })
 
