@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-@keyframes flash {
+/*@keyframes flash {
 0% {
     opacity: 1;
 }
@@ -6486,6 +6486,8 @@ span.error {
 .offcanvas-toggle.active .icon-bar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
+
+*/
 .b-card-select-container:first-of-type {
     background-color: #fff;
 }
