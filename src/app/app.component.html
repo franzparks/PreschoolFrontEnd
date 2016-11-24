@@ -46,11 +46,11 @@
 
       <ul class="nav navbar-nav" id="b-primary-nav-links">
         <li  class="active dropdown">
-          <a  routerLink="/schools"   id="primaryHomeLink"><span> <i class="fa fa-home fa-fw" aria-hidden="true"></i></span> <span class="sr-only">Home</span></a>
+          <a  routerLink="/schools"   id="primaryHomeLink"><span> <i class="fa fa-home fa-fw nav-link" aria-hidden="true"></i></span> <span class="sr-only">Home</span></a>
         </li>
 
         <li class=" dropdown" *ngFor="let navItem of navItems">
-        <a  href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle main">{{navItem.navTitle}}<span class="caret"></span></a>
+        <a  href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle nav-link">{{navItem.navTitle}}<span class="caret"></span></a>
 
           <ul [ngClass]="navItem.id > 4 ?  menuStyleRight : menuStyleLeft">
 
@@ -62,7 +62,7 @@
                 <div class="col-sm-4" *ngIf="navItem.navLinksCol1">
                   <ul>
                     <li *ngFor="let linkItem of navItem.navLinksCol1">
-                      <a [routerLink]="linkItem.ref" class="b-primary-nav-sublink nav-track">{{linkItem.label}}</a>
+                      <a [routerLink]="linkItem.ref" class="nav-link">{{linkItem.label}}</a>
                     </li>
                   
                   </ul>
@@ -70,7 +70,7 @@
                 <div class="col-sm-4" *ngIf="navItem.navLinksCol2">
                   <ul>
                    <li *ngFor="let linkItem of navItem.navLinksCol2">
-                      <a [routerLink]="linkItem.ref" class="b-primary-nav-sublink nav-track">{{linkItem.label}}</a>
+                      <a [routerLink]="linkItem.ref" class="nav-link">{{linkItem.label}}</a>
                     </li>
                     
                   </ul>
@@ -78,7 +78,7 @@
                 <div class="col-sm-4" *ngIf="navItem.navLinksCol3">
                   <ul>
                     <li *ngFor="let linkItem of navItem.navLinksCol3">
-                      <a [routerLink]="linkItem.ref" class="b-primary-nav-sublink nav-track">{{linkItem.label}}</a>
+                      <a [routerLink]="linkItem.ref" class="nav-link">{{linkItem.label}}</a>
                     </li>
           
                   </ul>
