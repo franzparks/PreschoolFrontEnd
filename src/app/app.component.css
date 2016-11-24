@@ -13,6 +13,22 @@
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
+.nav-link-padding {
+    padding-left: 10px;
+}
+
+.box-cover {
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(117, 117, 117, 0.2);
+    cursor: pointer;
+    font-size: 12px;
+    min-height: 290px;
+    min-width: 290px;
+    position: relative;
+}
+
 
 
 
