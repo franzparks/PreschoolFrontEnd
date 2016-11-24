@@ -1,3 +1,7 @@
+figure {
+    box-shadow: 0 0 5px rgba(117, 117, 117, 0.2);
+}
+
 .welcome {
     text-align: center;
     margin: 15px 0;  
@@ -18,8 +22,8 @@
 }
 
 .box-cover {
-    background-color: #ffffff;
-    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    border: 2px solid #e7e7e7;
     border-radius: 2px;
     box-shadow: 0 0 5px rgba(117, 117, 117, 0.2);
     cursor: pointer;
@@ -27,7 +31,9 @@
     min-height: 290px;
     min-width: 290px;
     position: relative;
+
 }
+
 
 
 
