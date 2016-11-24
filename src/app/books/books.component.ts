@@ -5,7 +5,7 @@ import { Book } from '../book';
 @Component({
   selector: 'app-books',
   templateUrl: './books.component.html',
-  styleUrls: ['./books.component.css']
+  styleUrls: ['./books.component.css', '../app.component.css']
 })
 export class BooksComponent implements OnInit {
 
