@@ -41,7 +41,7 @@
 
 
     <!-- Main Nav - Tablet & Desktop -->
-  <nav class="navbar seondary-nav bg-faded">
+  <nav class="navbar  header-wrapper">
     <div class="container-fluid">
 
       <ul class="nav navbar-nav" >
@@ -50,7 +50,7 @@
         </li>
 
         <li class="nav-item dropdown" *ngFor="let navItem of navItems">
-        <a  href="javascript:void(0)" class="nav-link dropdown-toggle">{{navItem.navTitle}}</a>
+        <a  href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">{{navItem.navTitle}}</a>
 
           <ul [ngClass]="navItem.id > 4 ?  menuStyleRight : menuStyleLeft">
 
