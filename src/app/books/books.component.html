@@ -1,72 +1,14 @@
 <div class="row">
-<div class="col-lg-4 col-md-2 col-sm-1" *ngFor="let book of books">
-<div class="polaroid " >
-  <img src="http://lorempixel.com/400/200/sports/5/" alt="A placeholder image" style="width:100%">
-  <div class="container">
-    <p>A caption for the above image.</p>
-    <p>Add in some extra text for good measure.</p>
-  </div>
-</div>
-</div>
-</div>
-<!--<div class="row">
-<div class="col-lg-4" *ngFor="let book of books">
-	
-	<div class=" box-cover">
-  <img src="http://lorempixel.com/400/200/sports/5/" class="figure-img img-fluid " alt="A generic square placeholder image with rounded corners in a figure." style="width:100%">
-  <span class="figure-caption">A caption for the above image. </span>
-
-</div>
-</div>
+	<div class="col-lg-4 col-md-2 col-sm-1" *ngFor="let book of books">
+		<a href="" [routerLink]="['/book', book.id]">
+			<div class="polaroid ">
+				<img src="http://lorempixel.com/400/200/sports/5/" alt="A placeholder image" style="width:100%">
+					<div class="container">
+			    		<p>{{book.name}}</p>
+			    		<p>{{book.author}}</p>
+			  		</div>
+			</div>
+		</a>
+	</div>
 </div>
 
-<!--<div class="row">
-<div class="box-cover1" *ngFor="let book of books">
-	<figure class="figure col-lg-4 ">
-  <img src="http://lorempixel.com/400/200/sports/5/" class="figure-img img-fluid " alt="A generic square placeholder image with rounded corners in a figure.">
-  <figcaption class="figure-caption">A caption for the above image. </figcaption>
-
-</figure>
-</div>
-</div>-->
-<!--<div class="">
-	<section class="">
-		<ul class="">
-			<li class="" *ngFor="let book of books">
-        		<div class="">
-
-          			<a class="" [routerLink]="['/book', book.id]" alt="image" >
-            			<span class="">
-                            <h1 class="">
-	                            <span class="">{{book.name}}</span>
-	            				<span class="">{{book.author}}<sup class="">®</sup></span>
-            				</h1>
-            			</span>
-
-
-	            		
-
-
-	            		<div style="outline: medium none;" class="">
-
-	              			<img style="outline: medium none;" src="http://lorempixel.com/400/200/sports/5/" alt="Image of the Priceline Rewards Visa Card" class="img-thumbnail">
-
-
-	              			<ul class="">
-
-		                		<li class="">
-		                  			<span class=""><p>5X points</p>
-									</span>
-		                  			<span class=""><p>on eligible priceline purchases</p>
-									</span>
-		                		</li>
-		    				</ul>
-		    			</div>
-	    			</a>
-	    		</div>
-	    	</li>
-	    </ul>    				
-	</section>    
-</div>
-
--->
