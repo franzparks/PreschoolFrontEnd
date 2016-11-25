@@ -8,7 +8,9 @@
     padding: 20px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
-
+.margin-wrapper {
+    margin: 20px;
+}
 .secondary-nav-wrapper {
     padding: 5px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
@@ -20,13 +22,12 @@
 
 
 div.polaroid {
-  margin-top: 20px;
   width: 400px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.109);
   text-align: center;
 }
 
-.item-hover {
+.margin-wrapper .item-hover {
     background-color: #2c3e50;
     border-radius: 2px;
     opacity: 0;
@@ -39,11 +40,11 @@ div.polaroid {
     height: 100%;
 
 }
-.item-hover:hover {
+.margin-wrapper .item-hover:hover {
   opacity: 0.95;
 }
 
-.item-hover-btn {
+.margin-wrapper .item-hover-btn {
   background-color: #2c3e50;
   border: 1px solid #ffffff;
   border-radius: 2px;
