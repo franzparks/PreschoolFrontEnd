@@ -33,6 +33,17 @@
     <!-- Main Nav - Tablet & Desktop -->
   <nav class="nav secondary-nav-wrapper">
     <div class="container-fluid">
+    <dropdown [open]="isOpen">
+    <button id="dropdown-button" class="btn btn-primary dropdown-toggle" (click)="toggleDropDown()">
+      Toggle dropdown
+    </button>
+    <dropdown-menu aria-labelledby="dropdown-button">
+    <ul>
+      <li *ngFor="let menu of dropdownMenu">
+        <a href="">{{menu.text}}</a>
+      </li>
+    </ul>
+    </dropdown>
 
       <ul class="nav navbar-nav" >
         <li  class="nav-item dropdown">

@@ -40,5 +40,9 @@ export class AppComponent {
     this.navItems = this.menuService.getNavItems();
   }
 
+  toggleDropDown(){
+    this.isOpen = !this.isOpen;
+  }
+
   
 }
