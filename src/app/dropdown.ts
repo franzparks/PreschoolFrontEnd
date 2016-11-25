@@ -11,3 +11,15 @@ import {Component, Input} from '@angular/core';
 export class  DropDown {
 	@Input() private open: boolean;
 }
+
+@Component({
+	selector:'dropdown-menu',
+	host: {
+		'class': 'dropdown-menu'
+	},
+	template: `<ng-content></ng-content>`
+})
+
+export class  DropDownMenu {}
+
+
