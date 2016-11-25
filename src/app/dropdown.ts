@@ -2,14 +2,17 @@ import {Component, Input} from '@angular/core';
 
 @Component({
 	selector:'dropdown',
-	template: `<div> class="dropdown" [class.open]="open">
+	template: `
 	<ng-content></ng-content>
-	</div>
+
 	`
 })
 
 export class  DropDown {
 	@Input() private open: boolean;
+	constructor(){
+
+	}
 }
 
 @Component({
@@ -20,6 +23,8 @@ export class  DropDown {
 	template: `<ng-content></ng-content>`
 })
 
-export class  DropDownMenu {}
+export class  DropDownMenu {
+	constructor(){}
+}
 
 
