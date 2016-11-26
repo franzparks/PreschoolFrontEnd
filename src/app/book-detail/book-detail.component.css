@@ -1,6 +1,9 @@
+.container {
+	 background: #a56d5f url("../assets/images/ignasi_pattern_s.png")  bottom left;
+}
+
 .details {
 	margin: 20px;
-	background: 
 }
 
 .details h2 {
