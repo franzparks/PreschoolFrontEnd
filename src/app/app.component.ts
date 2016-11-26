@@ -4,6 +4,7 @@ import { NavItem } from './nav-item';
 import { MenuService } from './menu.service';
 
 import { DropDown, DropDownMenu } from './dropdown';
+import {DropdownModule} from "ng2-dropdown";
 
 
 
