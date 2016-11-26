@@ -28,18 +28,6 @@
       <h1>{{title}}</h1>
     </div>
 
-    <dropdown [open]="true">
-      <button id="dropdown-button" class="btn btn-primary dropdown-toggle" (click)="toggleDropDown()">
-        Toggle dropdown
-      </button>
-      <dropdown-menu aria-labelledby="dropdown-button">
-        <ul>
-          <li *ngFor="let menu of dropdownMenu">
-            <a href="">{{menu.text}}</a>
-          </li>
-        </ul>
-       </dropdown-menu> 
-    </dropdown>
   </div>
 
 
