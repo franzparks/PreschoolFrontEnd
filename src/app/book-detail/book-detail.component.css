@@ -1,5 +1,6 @@
-.container {
-	 background: #a56d5f url("../assets/images/ignasi_pattern_s.png")  bottom left;
+.container-fluid {
+	 background: #a56d5f url("../assets/images/ignasi_pattern_s.png")  center center;
+	 min-height: 800px;
 }
 
 .details {
