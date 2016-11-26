@@ -19,7 +19,7 @@ import { RecipeComponent } from './recipes/recipes.component';
 import { SchoolDetailComponent } from './school-detail/school-detail.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
 import { AppRoutingModule }     from './app-routing.module';
-import { DropDown, DropDownMenu } from './dropdown';
+
 import {DropdownModule} from "ng2-dropdown";
 
 @NgModule({
@@ -35,8 +35,6 @@ import {DropdownModule} from "ng2-dropdown";
     RecipeComponent,
     SchoolDetailComponent,
     BookDetailComponent,
-    DropDown,
-    DropDownMenu,
 
   ],
   imports: [
