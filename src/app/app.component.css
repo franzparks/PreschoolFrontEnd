@@ -60,6 +60,9 @@ div.container {
   padding: 10px;
 
 }
+.nav-item {
+  padding-left: 30px;
+}
 
 
 .dropdown-menu  {

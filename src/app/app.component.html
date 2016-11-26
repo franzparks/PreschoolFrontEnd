@@ -40,7 +40,7 @@
           <a  routerLink="/schools" class="nav-link dropdown-toggle" data-toggle="dropdown"><span> <i class="fa fa-home fa-fw" aria-hidden="true"></i></span> <span class="sr-only">Home</span></a>
         </li>
 
-        <li class="nav-item dropdown nav-link-padding" *ngFor="let navItem of navItems" dropdown>
+        <li class="nav-item dropdown" *ngFor="let navItem of navItems" dropdown>
         <a  href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" dropdown-open>{{navItem.navTitle}}</a>
 
           <ul [ngClass]="navItem.id > 4 ?  menuStyleRight : menuStyleLeft">
