@@ -19,9 +19,9 @@ export class AppComponent {
   title = 'Welcome To Golden Five';
   menuStyleLeft = 'dropdown-menu menu dropdown-menu-left';
   menuStyleRight = 'dropdown-menu menu dropdown-menu-right';
-  navStyleOneCol = 'b-dropdown-grid-container';
-  navStyleTwoCol = 'b-dropdown-grid-container b-dropdown-grid-container-two-column';
-  navStyleThreeCol = 'b-dropdown-grid-container b-dropdown-grid-container-three-column';
+  navStyleOneCol = 'dropdown-grid-container';
+  navStyleTwoCol = 'dropdown-grid-container dropdown-grid-container-two-column';
+  navStyleThreeCol = 'dropdown-grid-container dropdown-grid-container-three-column';
   navItems : NavItem[] = [];
   
   

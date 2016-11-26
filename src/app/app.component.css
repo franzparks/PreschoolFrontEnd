@@ -72,16 +72,16 @@ div.container {
 }
 
 /* Extra css to work on later*/
-.b-dropdown-grid-container {
+.dropdown-grid-container {
     min-width: 480px;
     padding: 10px 0 17px 40px
 }
 
-.b-dropdown-grid-container.b-dropdown-grid-container-three-column {
+.dropdown-grid-container.dropdown-grid-container-three-column {
     min-width: 480px
 }
 
-.b-dropdown-grid-container h3 {
+.dropdown-grid-container h3 {
     margin-bottom: 17px;
     color: #059fdb;
     font-family: "Open Sans",tahoma,helvetica,arial,clean,sans-serif;
@@ -89,12 +89,12 @@ div.container {
     text-align: left
 }
 
-.b-dropdown-grid-container ul {
+.dropdown-grid-container ul {
     padding-left: 0;
     list-style: none
 }
 
-.b-dropdown-grid-container ul li {
+.dropdown-grid-container ul li {
     margin-right: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
