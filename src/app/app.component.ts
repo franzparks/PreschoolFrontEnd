@@ -16,7 +16,7 @@ import {DropdownModule} from "ng2-dropdown";
 
 export class AppComponent {
 
-  title = 'Welcome To Golden Five';
+  title = 'Golden Five';
   menuStyleLeft = 'dropdown-menu menu dropdown-menu-left';
   menuStyleRight = 'dropdown-menu menu dropdown-menu-right';
   navStyleOneCol = 'dropdown-grid-container';
