@@ -17,3 +17,7 @@
 .details button {
 	color: #20517d;
 }
+
+.details p {
+	margin-top: 20px; 
+}
