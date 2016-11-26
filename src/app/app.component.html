@@ -54,28 +54,6 @@
     </div>
     <br/>
 
-    <!-- button dropdown -->
-    <div class="dropdown" dropdown>
-        <button class="btn btn-primary" dropdown-open>My Heroes</button>
-        <ul class="dropdown-menu">
-            <li><a href="#">Badman</a></li>
-            <li><a href="#">Sadman</a></li>
-            <li><a href="#">Lieman</a></li>
-        </ul>
-    </div>
-    <br/>
-
-    <!-- dropdown with items that are not closing dropdown when you click on them -->
-    <div class="dropdown" dropdown>
-        <button class="btn btn-primary" dropdown-open>Not closable on items click</button>
-        <ul class="dropdown-menu" dropdown-not-closable-zone>
-            <li><a href="#">This dropdown will</a></li>
-            <li><a href="#">not be closed when you</a></li>
-            <li><a href="#">select any its items</a></li>
-            <li><a href="#">this allows you to put</a></li>
-            <li><a href="#">dynamic content into it</a></li>
-        </ul>
-    </div>
 
   <nav class="nav secondary-nav-wrapper">
     <div class="container-fluid">
@@ -86,7 +64,7 @@
           <a  routerLink="/schools" class="nav-link dropdown-toggle" data-toggle="dropdown"><span> <i class="fa fa-home fa-fw" aria-hidden="true"></i></span> <span class="sr-only">Home</span></a>
         </li>
 
-        <li class="nav-item dropdown nav-link-padding" *ngFor="let navItem of navItems">
+        <li class="nav-item dropdown nav-link-padding" *ngFor="let navItem of navItems" dropdown>
         <a  href="#" class="nav-link dropdown-toggle " data-toggle="dropdown">{{navItem.navTitle}}</a>
 
           <ul [ngClass]="navItem.id > 4 ?  menuStyleRight : menuStyleLeft">
