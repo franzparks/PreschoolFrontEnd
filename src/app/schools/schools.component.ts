@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { School } from '../school';
+import { School } from './school';
 
 @Component({
   selector: 'app-schools',
@@ -7,7 +7,7 @@ import { School } from '../school';
   styleUrls: ['./schools.component.css']
 })
 export class SchoolsComponent implements OnInit {
-	
+
 	schools: School[] = [];
 
 	constructor() { }
