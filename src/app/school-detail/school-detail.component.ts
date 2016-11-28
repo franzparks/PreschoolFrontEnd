@@ -4,9 +4,9 @@ import { ActivatedRoute, Params }   from '@angular/router';
 import { Location }                 from '@angular/common';
 import 'rxjs/add/operator/switchMap';
 
-import { SchoolService } from '../school.service';
+import { SchoolService } from '../schools/school.service';
 
-import {School} from '../school';
+import {School} from '../schools/school';
 
 
 @Component({
