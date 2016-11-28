@@ -7,11 +7,11 @@ import { School } from '../school';
   styleUrls: ['./schools.component.css']
 })
 export class SchoolsComponent implements OnInit {
+	schools: School[] = [];
 
+	constructor() { }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+	ngOnInit() {
+	}
 
 }
