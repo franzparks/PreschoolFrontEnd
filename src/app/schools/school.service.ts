@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import  {School} from './school';
 
+
 const SCHOOLS = []; //placeholder
 
 @Injectable()
