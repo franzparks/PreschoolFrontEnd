@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import  {School} from './school';
+import {SCHOOLS} from './mock-schools';
 
-
-const SCHOOLS = []; //placeholder
+//const SCHOOLS = []; //placeholder
 
 @Injectable()
 export class SchoolService {
