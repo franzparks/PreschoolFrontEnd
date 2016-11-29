@@ -1,4 +1,5 @@
 .school-row {
 	margin: 20px;
-	background-color: grey; 
+	background-color: grey;
+	border-radius: 2px;  
 }
