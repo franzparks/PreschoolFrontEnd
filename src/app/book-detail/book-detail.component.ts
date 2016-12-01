@@ -4,9 +4,9 @@ import { ActivatedRoute, Params }   from '@angular/router';
 import { Location }                 from '@angular/common';
 import 'rxjs/add/operator/switchMap';
 
-import { BookService } from '../book.service';
+import { BookService } from '../books/book.service';
 
-import {Book} from '../book';
+import {Book} from '../books/book';
 
 @Component({
 	moduleId: "bookDetail",

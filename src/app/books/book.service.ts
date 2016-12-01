@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import {Book} from './book';
-import { BOOKS } from './books/mock-books';
+import { BOOKS } from './mock-books';
 
 @Injectable()
 export class BookService {

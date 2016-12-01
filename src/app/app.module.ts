@@ -17,7 +17,7 @@ import { SongsComponent } from './songs/songs.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { ToysComponent } from './toys/toys.component';
 import { SafetyComponent } from './safety/safety.component';
-import { BookService } from './book.service';
+import { BookService } from './books/book.service';
 import { SchoolService } from './schools/school.service';
 import { RecipeComponent } from './recipes/recipes.component';
 import { SchoolDetailComponent } from './school-detail/school-detail.component';
