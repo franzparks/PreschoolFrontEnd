@@ -8,6 +8,8 @@ export class BookService {
 
 	books : Book[] = BOOKS;
 
+	private booksUrl = 'app/books';
+
 	constructor() { }
 
 	getBooks() : Promise<Book[]> {
