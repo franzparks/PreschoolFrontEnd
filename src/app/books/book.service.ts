@@ -14,7 +14,7 @@ export class BookService {
 
 	private booksUrl = 'app/books';
 
-	constructor() { }
+	constructor(private http: Http) { }
 
 	getBooks() : Promise<Book[]> {
 	  	return Promise.resolve(this.books);
