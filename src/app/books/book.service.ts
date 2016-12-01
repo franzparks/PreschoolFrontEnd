@@ -1,5 +1,9 @@
 import { Injectable } from '@angular/core';
 
+import { Headers, Http } from '@angular/http';
+
+import 'rxjs/add/operator/toPromise';
+
 import {Book} from './book';
 import { BOOKS } from './mock-books';
 
