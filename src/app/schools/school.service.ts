@@ -11,7 +11,7 @@ import {SCHOOLS} from './mock-schools';
 @Injectable()
 export class SchoolService {
 
-	schools : School[] = SCHOOLS;
+	//schools : School[] = SCHOOLS;
 
 	private schoolsUrl = 'app/schools'; //URL to web api
 
