@@ -46,6 +46,7 @@ import {DropdownModule} from "ng2-dropdown";
     HttpModule,
     AppRoutingModule,
     DropdownModule,
+    InMemoryWebApiModule.forRoot(InMemoryDataService),
 
   ],
   providers: [MenuService, BookService, SchoolService],
