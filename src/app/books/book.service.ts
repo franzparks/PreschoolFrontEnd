@@ -5,12 +5,12 @@ import { Headers, Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 
 import {Book} from './book';
-import { BOOKS } from './mock-books';
+//import { BOOKS } from './mock-books';
 
 @Injectable()
 export class BookService {
 
-	books : Book[] = BOOKS;
+	//books : Book[] = BOOKS;
 
 	private booksUrl = 'app/books';
 
