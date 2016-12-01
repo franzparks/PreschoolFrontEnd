@@ -18,7 +18,11 @@ export class SchoolService {
 	constructor(private http: Http) { }
 
 	getSchools() : Promise<School[]> {
-		return Promise.resolve(this.schools);
+		//return Promise.resolve(this.schools);
+		return this.http.get(this.schoolsUrl)
+               .toPromise()
+               .then(response => response.json().data as School[])
+               .catch(this.handleError);
 	}
 
 
