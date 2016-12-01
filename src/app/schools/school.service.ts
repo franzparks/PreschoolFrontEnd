@@ -12,7 +12,9 @@ import {SCHOOLS} from './mock-schools';
 export class SchoolService {
 
 	schools : School[] = SCHOOLS;
-	  
+	
+	private schoolsUrl = 'app/schools'; //URL to web api
+
 	constructor() { }
 
 	getSchools() : Promise<School[]> {
