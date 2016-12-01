@@ -31,4 +31,8 @@ export class SchoolService {
 	  				.then(schools => schools.find(school => school.id === id));
 	}
 
+	handleError(e){
+		console.log(e);
+	}
+
 }
