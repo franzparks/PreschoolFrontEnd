@@ -17,7 +17,11 @@ export class BookService {
 	constructor(private http: Http) { }
 
 	getBooks() : Promise<Book[]> {
-	  	return Promise.resolve(this.books);
+	  	//return Promise.resolve(this.books);
+	  	return this.http.get(this.booksUrl)
+               .toPromise()
+               .then(response => response.json().data as Book[])
+               .catch(this.handleError);
 	}
 
 	getBook(id: number): Promise<Book> {
