@@ -6,6 +6,7 @@ import { RouterModule }   from '@angular/router';
 
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './schools/in-memory-data.service';
+import { InMemoryService }  from './schools/in-memory-data.service';
 
 import { AppComponent } from './app.component';
 import { MenuService } from './menu.service';
@@ -47,6 +48,7 @@ import {DropdownModule} from "ng2-dropdown";
     AppRoutingModule,
     DropdownModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService),
+    InMemoryWebApiModule.forRoot(InMemoryService),
 
   ],
   providers: [MenuService, BookService, SchoolService],

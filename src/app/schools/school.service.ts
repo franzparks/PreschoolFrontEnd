@@ -13,7 +13,7 @@ export class SchoolService {
 
 	//schools : School[] = SCHOOLS;
 
-	private schoolsUrl = 'app/schools'; //URL to web api
+	private schoolsUrl = 'app/schools1'; //URL to web api
 
 	constructor(private http: Http) { }
 
