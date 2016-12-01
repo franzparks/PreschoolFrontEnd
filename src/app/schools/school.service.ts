@@ -4,7 +4,7 @@ import { Headers, Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 
 import  {School} from './school';
-import {SCHOOLS} from './mock-schools';
+//import {SCHOOLS} from './mock-schools';
 
 //const SCHOOLS = []; //placeholder
 
