@@ -1,5 +1,9 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
+img, embed,object, video {
+	max-width: 100%;
+}
+
 h1 {
 	color: #0336896;
 }
