@@ -8,14 +8,55 @@
 </header>
  <nav id="drawer" class="nav">
     <ul class="nav__list">
-      <li class="nav__item"><a href="#">News</a></li>
+      <li  class="nav__item dropdown">
+          <a  routerLink="/schools" class="dropdown-toggle" data-toggle="dropdown"><span> <i class="fa fa-home fa-fw" aria-hidden="true"></i></span> <span class="sr-only">Home</span></a>
+        </li>
+      <!--<li class="nav__item dropdown"><a href="#">News</a></li>
       <li class="nav__item"><a href="#">Events</a></li>
       <li class="nav__item"><a href="#">Culture</a></li>
-      <li class="nav__item"><a href="#">Blog</a></li>
+      <li class="nav__item"><a href="#">Blog</a></li>-->
+      <li class="nav__item dropdown" *ngFor="let navItem of navItems" dropdown>
+        <a  href="#" class="dropdown-toggle" data-toggle="dropdown" dropdown-open>{{navItem.navTitle}}</a>
+
+          <ul [ngClass]="navItem.id > 4 ?  menuStyleRight : menuStyleLeft">
+
+            <li [ngClass]="navItem.navLinksCol3 ?  navStyleThreeCol : navStyleOneCol" >
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3>{{navItem.navSubTitle}}</h3>
+                </div>
+                <div class="col-sm-4" *ngIf="navItem.navLinksCol1">
+                  <ul>
+                    <li *ngFor="let linkItem of navItem.navLinksCol1">
+                      <a [routerLink]="linkItem.ref" class="nav-link">{{linkItem.label}}</a>
+                    </li>
+                  
+                  </ul>
+                </div>
+                <div class="col-sm-4" *ngIf="navItem.navLinksCol2">
+                  <ul>
+                   <li *ngFor="let linkItem of navItem.navLinksCol2">
+                      <a [routerLink]="linkItem.ref" class="nav-link">{{linkItem.label}}</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                <div class="col-sm-4" *ngIf="navItem.navLinksCol3">
+                  <ul>
+                    <li *ngFor="let linkItem of navItem.navLinksCol3">
+                      <a [routerLink]="linkItem.ref" class="dropdown-toggle">{{linkItem.label}}</a>
+                    </li>
+          
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+      </li>
     </ul>
   </nav>
-    
-  <nav class="nav secondary-nav-wrapper">
+
+  <!--<nav class="nav secondary-nav-wrapper">
     <div class="container-fluid">
     
 
@@ -65,7 +106,7 @@
 
       </ul>
     </div>
-  </nav>
+  </nav>-->
 <div class="b-app-body12">
   <router-outlet></router-outlet>
 </div>
