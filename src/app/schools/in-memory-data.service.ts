@@ -1,4 +1,5 @@
 import {InMemoryDbService } from 'angular-in-memory-web-api';
+import {BOOKS } from '../books/mock-books'
 
 export class InMemoryDataService implements InMemoryDbService {
 	createDb() {
@@ -24,6 +25,7 @@ export class InMemoryDataService implements InMemoryDbService {
 				name : 'Nursery'
 			},
 		];
-		return {schools};
+		let books = BOOKS;
+		return {schools, books};
 	}
 }
