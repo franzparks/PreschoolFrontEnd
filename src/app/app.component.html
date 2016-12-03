@@ -17,14 +17,6 @@
           <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
         </svg>
         </a>
-        <!--<ul class="nav__list">
-          <div class="dropdown-content">
-            <li><a href="#">Badman</a></li>
-            <li><a href="#">Sadman</a></li>
-            <li><a href="#">Lieman</a></li>  
-            </div>        
-
-        </ul>-->
 
     </span>
     
@@ -36,10 +28,7 @@
       <li  class="nav__item dropdown">
           <a  routerLink="/schools" class="dropdown-toggle" data-toggle="dropdown"><span> <i class="fa fa-home fa-fw" aria-hidden="true"></i></span> <span class="sr-only">Home</span></a>
         </li>
-      <!--<li class="nav__item dropdown"><a href="#">News</a></li>
-      <li class="nav__item"><a href="#">Events</a></li>
-      <li class="nav__item"><a href="#">Culture</a></li>
-      <li class="nav__item"><a href="#">Blog</a></li>-->
+
       <li class="nav__item dropdown" *ngFor="let navItem of navItems" dropdown>
         <a  href="#" class="dropdown-toggle" data-toggle="dropdown" dropdown-open>{{navItem.navTitle}}</a>
 
@@ -81,57 +70,6 @@
     </ul>
   </nav>
 
-  <!--<nav class="nav secondary-nav-wrapper">
-    <div class="container-fluid">
-    
-
-      <ul class="nav navbar-nav" >
-        <li  class="nav-item dropdown">
-          <a  routerLink="/schools" class="nav-link dropdown-toggle" data-toggle="dropdown"><span> <i class="fa fa-home fa-fw" aria-hidden="true"></i></span> <span class="sr-only">Home</span></a>
-        </li>
-
-        <li class="nav-item dropdown" *ngFor="let navItem of navItems" dropdown>
-        <a  href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" dropdown-open>{{navItem.navTitle}}</a>
-
-          <ul [ngClass]="navItem.id > 4 ?  menuStyleRight : menuStyleLeft">
-
-            <li [ngClass]="navItem.navLinksCol3 ?  navStyleThreeCol : navStyleOneCol" >
-              <div class="row">
-                <div class="col-sm-12">
-                  <h3>{{navItem.navSubTitle}}</h3>
-                </div>
-                <div class="col-sm-4" *ngIf="navItem.navLinksCol1">
-                  <ul>
-                    <li *ngFor="let linkItem of navItem.navLinksCol1">
-                      <a [routerLink]="linkItem.ref" class="nav-link">{{linkItem.label}}</a>
-                    </li>
-                  
-                  </ul>
-                </div>
-                <div class="col-sm-4" *ngIf="navItem.navLinksCol2">
-                  <ul>
-                   <li *ngFor="let linkItem of navItem.navLinksCol2">
-                      <a [routerLink]="linkItem.ref" class="nav-link">{{linkItem.label}}</a>
-                    </li>
-                    
-                  </ul>
-                </div>
-                <div class="col-sm-4" *ngIf="navItem.navLinksCol3">
-                  <ul>
-                    <li *ngFor="let linkItem of navItem.navLinksCol3">
-                      <a [routerLink]="linkItem.ref" class="nav-link dropdown-toggle">{{linkItem.label}}</a>
-                    </li>
-          
-                  </ul>
-                </div>
-              </div>
-            </li>
-          </ul>
-      </li>
-
-      </ul>
-    </div>
-  </nav>-->
 <div class="">
   <router-outlet></router-outlet>
 </div>
