@@ -115,3 +115,13 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__menu {
+  display: none;
+}
+
