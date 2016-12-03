@@ -65,13 +65,13 @@ div.container {
 }
 
 
-.dropdown-menu  {
+/*.dropdown-menu  {
     margin-right: 20px;
     vertical-align: text-top;
     width: 480px;
 }
 
-/* Extra css to work on later*/
+
 .dropdown-grid-container {
     min-width: 480px;
     padding: 10px 0 17px 40px
@@ -100,3 +100,12 @@ div.container {
     padding-bottom: 10px;
     border-top: 1px solid #eee
 }
+
+
+@media screen and (max-width: 842px){
+  .dropdown-menu  {
+    margin-right: 20px;
+    vertical-align: text-top;
+    width: 120px;
+}
+}*/

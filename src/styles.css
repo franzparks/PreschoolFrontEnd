@@ -166,12 +166,14 @@ main {
     width: 32px;
     fill: #E0E0E0;
   }
+
   .dropdown-menu {
   	position: relative;
   }
   .dropdown {
     position: relative;
     display: inline-block;
+    max-width: 160px;
 	}
 
 .dropdown-content {
