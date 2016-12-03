@@ -18,9 +18,48 @@
         </svg>
         </a>
         <ul class="dropdown-menu">
-            <li><a href="#">Badman</a></li>
+            <!--<li><a href="#">Badman</a></li>
             <li><a href="#">Sadman</a></li>
-            <li><a href="#">Lieman</a></li>
+            <li><a href="#">Lieman</a></li>-->
+            <li class="nav__item dropdown" *ngFor="let navItem of navItems" dropdown>
+              <a  href="#" class="dropdown-toggle" data-toggle="dropdown" dropdown-open>{{navItem.navTitle}}</a>
+
+                <ul [ngClass]="navItem.id > 4 ?  menuStyleRight : menuStyleLeft">
+
+                  <li [ngClass]="navItem.navLinksCol3 ?  navStyleThreeCol : navStyleOneCol" >
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <h3>{{navItem.navSubTitle}}</h3>
+                      </div>
+                      <div class="col-sm-4" *ngIf="navItem.navLinksCol1">
+                        <ul>
+                          <li *ngFor="let linkItem of navItem.navLinksCol1">
+                            <a [routerLink]="linkItem.ref" class="nav-link">{{linkItem.label}}</a>
+                          </li>
+                        
+                        </ul>
+                      </div>
+                      <div class="col-sm-4" *ngIf="navItem.navLinksCol2">
+                        <ul>
+                         <li *ngFor="let linkItem of navItem.navLinksCol2">
+                            <a [routerLink]="linkItem.ref" class="nav-link">{{linkItem.label}}</a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                      <div class="col-sm-4" *ngIf="navItem.navLinksCol3">
+                        <ul>
+                          <li *ngFor="let linkItem of navItem.navLinksCol3">
+                            <a [routerLink]="linkItem.ref" class="dropdown-toggle">{{linkItem.label}}</a>
+                          </li>
+                
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+            </li>
+
         </ul>
     </span>
       
