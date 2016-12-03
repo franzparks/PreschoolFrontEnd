@@ -12,7 +12,7 @@
       </a>-->
        <!-- a-style dropdown -->
     <span dropdown >
-        <a  dropdown-open data-toggle="dropdown" class="header__menu">
+        <a  dropdown-open data-toggle="dropdown2" class="header__menu">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
         </svg>
@@ -23,7 +23,51 @@
       
   </div>
 </header>
- <nav id="drawer" class="nav">
+ <nav id="drawer2" class="nav2">
+    <ul class="nav__list2">
+      
+      <li class="nav__item dropdown2" *ngFor="let navItem of navItems" dropdown>
+        <a  href="#" class="dropdown-toggle" data-toggle="dropdown" dropdown-open>{{navItem.navTitle}}</a>
+
+          <ul [ngClass]="navItem.id > 4 ?  menuStyleRight : menuStyleLeft">
+
+            <li [ngClass]="navItem.navLinksCol3 ?  navStyleThreeCol : navStyleOneCol" >
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3>{{navItem.navSubTitle}}</h3>
+                </div>
+                <div class="col-sm-4" *ngIf="navItem.navLinksCol1">
+                  <ul>
+                    <li *ngFor="let linkItem of navItem.navLinksCol1">
+                      <a [routerLink]="linkItem.ref" class="nav-link">{{linkItem.label}}</a>
+                    </li>
+                  
+                  </ul>
+                </div>
+                <div class="col-sm-4" *ngIf="navItem.navLinksCol2">
+                  <ul>
+                   <li *ngFor="let linkItem of navItem.navLinksCol2">
+                      <a [routerLink]="linkItem.ref" class="nav-link">{{linkItem.label}}</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                <div class="col-sm-4" *ngIf="navItem.navLinksCol3">
+                  <ul>
+                    <li *ngFor="let linkItem of navItem.navLinksCol3">
+                      <a [routerLink]="linkItem.ref" class="dropdown-toggle">{{linkItem.label}}</a>
+                    </li>
+          
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <nav id="drawer" class="nav">
     <ul class="nav__list">
       <li  class="nav__item dropdown">
           <a  routerLink="/schools" class="dropdown-toggle" data-toggle="dropdown"><span> <i class="fa fa-home fa-fw" aria-hidden="true"></i></span> <span class="sr-only">Home</span></a>
