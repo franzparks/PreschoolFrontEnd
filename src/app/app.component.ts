@@ -29,5 +29,9 @@ export class AppComponent {
     this.navItems = this.menuService.getNavItems();
   }
 
+  toggleNav(){
+    
+  }
+
   
 }

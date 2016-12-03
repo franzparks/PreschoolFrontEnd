@@ -27,7 +27,7 @@
     <ul class="nav__list2">
       
       <li class="nav__item dropdown2" *ngFor="let navItem of navItems" dropdown>
-        <a  href="#" class="dropdown-toggle" data-toggle="dropdown" dropdown-open>{{navItem.navTitle}}</a>
+        <a  href="#" class="dropdown-toggle" data-toggle="dropdown2" dropdown-open>{{navItem.navTitle}}</a>
 
           <ul [ngClass]="navItem.id > 4 ?  menuStyleRight : menuStyleLeft">
 
