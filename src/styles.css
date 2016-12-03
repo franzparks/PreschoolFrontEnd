@@ -125,7 +125,7 @@ main {
   display: none;
 }
 
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 882px) {
   .header__logo {
     height: 48px;
     margin-right: 0.5em;
