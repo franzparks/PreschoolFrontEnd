@@ -11,8 +11,8 @@
         </svg>
       </a>-->
        <!-- a-style dropdown -->
-    <span dropdown >
-        <a  dropdown-open data-toggle="dropdown2" class="header__menu">
+    <span >
+        <a class="header__menu" (click)="toggleNav()">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
         </svg>
@@ -23,7 +23,7 @@
       
   </div>
 </header>
- <nav id="drawer2" class="nav2">
+ <nav id="drawer2" class="nav21">
     <ul class="nav__list2">
       
       <li class="nav__item dropdown2" *ngFor="let navItem of navItems" dropdown>
