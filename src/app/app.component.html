@@ -24,19 +24,19 @@
   </div>
 </header>
  <nav id="drawer2" [ngClass]="visible ?yes : no" >
-    <ul class="nav__list2">
+    <ul class="nav__list">
       
-      <li class="nav__item dropdown2" *ngFor="let navItem of navItems" dropdown>
-        <a  href="#" class="dropdown-toggle" data-toggle="dropdown2" dropdown-open>{{navItem.navTitle}}</a>
+      <li class="nav__item dropdown" *ngFor="let navItem of navItems" dropdown>
+        <a  href="#" class="dropdown-toggle " data-toggle="dropdown" dropdown-open>{{navItem.navTitle}}</a>
 
-          <ul [ngClass]="navItem.id > 4 ?  menuStyleRight : menuStyleLeft">
+          <ul class="menuStyleRight12">
 
-            <li [ngClass]="navItem.navLinksCol3 ?  navStyleThreeCol : navStyleOneCol" >
-              <div class="row">
-                <div class="col-sm-12">
+            <li class="navStyleOneCol12" >
+              <div class="dropdown-content">
+                <div class="">
                   <h3>{{navItem.navSubTitle}}</h3>
                 </div>
-                <div class="col-sm-4" *ngIf="navItem.navLinksCol1">
+                <div class="" *ngIf="navItem.navLinksCol1">
                   <ul>
                     <li *ngFor="let linkItem of navItem.navLinksCol1">
                       <a [routerLink]="linkItem.ref" class="nav-link">{{linkItem.label}}</a>
@@ -44,7 +44,7 @@
                   
                   </ul>
                 </div>
-                <div class="col-sm-4" *ngIf="navItem.navLinksCol2">
+                <div class="" *ngIf="navItem.navLinksCol2">
                   <ul>
                    <li *ngFor="let linkItem of navItem.navLinksCol2">
                       <a [routerLink]="linkItem.ref" class="nav-link">{{linkItem.label}}</a>
@@ -52,7 +52,7 @@
                     
                   </ul>
                 </div>
-                <div class="col-sm-4" *ngIf="navItem.navLinksCol3">
+                <div class="" *ngIf="navItem.navLinksCol3">
                   <ul>
                     <li *ngFor="let linkItem of navItem.navLinksCol3">
                       <a [routerLink]="linkItem.ref" class="dropdown-toggle">{{linkItem.label}}</a>

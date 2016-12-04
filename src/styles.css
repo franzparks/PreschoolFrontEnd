@@ -176,7 +176,7 @@ main {
   .dropdown-menu {
   	position: relative;
   }
-  .dropdown {
+  /*.dropdown {
     position: relative;
     display: inline-block;
     max-width: 160px;
@@ -208,7 +208,7 @@ main {
 .nav2 {
 	display: block;
 	position: relative;
-}
+}*/
 
 }
 
@@ -218,17 +218,8 @@ main {
 }
 
 @media screen and (max-width: 842px) {
-  .header__logo {
-    height: 48px;
-    margin-right: 0.5em;
-  }
-  .header__title {
-    margin-left: 0;
-    font-size: 2em;
-    vertical-align: bottom; 
-  }
   
-  .nav__item {
+  /*.nav__item {
     display: list-item;
     border-bottom: 1px solid #E0E0E0;
     width: 100%;
@@ -239,19 +230,20 @@ main {
     position: absolute;
     right: 0;
     padding: 1em;
-  }
-  .header__menu svg {
-    width: 32px;
-    fill: #E0E0E0;
-  }
+  }*/
+  
+  .nav2 {
+	display: block;
+	position: relative;
+}
 
   .dropdown-menu {
   	position: relative;
   }
   .dropdown {
     position: relative;
-    display: inline-block;
-    max-width: 160px;
+    /*display: inline-block;
+    max-width: 160px;*/
 	}
 
 .dropdown-content {
