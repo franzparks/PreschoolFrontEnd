@@ -29,9 +29,9 @@
       <li class="nav__item dropdown" *ngFor="let navItem of navItems" dropdown>
         <a  href="#" class="dropdown-toggle " data-toggle="dropdown" dropdown-open>{{navItem.navTitle}}</a>
 
-          <ul class="menuStyleRight12">
+          <ul class="" (click)="toggleNav()">
 
-            <li class="navStyleOneCol12" >
+            <li class="" >
               <div class="dropdown-content">
                 <div class="">
                   <h3>{{navItem.navSubTitle}}</h3>
