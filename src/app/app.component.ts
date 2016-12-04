@@ -25,7 +25,7 @@ export class AppComponent {
   yes = 'nav2';
   no = 'nav2 visibility';
   navItems : NavItem[] = [];
-  visible : boolean = true; 
+  visible : boolean = false; 
   
   
   constructor( private menuService : MenuService){
