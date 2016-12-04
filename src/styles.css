@@ -212,11 +212,6 @@ main {
 
 }
 
-.visibility {
-	display: none;
-	position: absolute;
-}
-
 @media screen and (max-width: 842px) {
   
   /*.nav__item {
@@ -232,7 +227,10 @@ main {
     padding: 1em;
   }*/
   
-  
+  .nav2 {
+	display: block;
+	position: relative;
+  }
 
   .dropdown-menu {
   	position: relative;
@@ -267,6 +265,11 @@ main {
     width: 80%;
 }
 
+}
+
+.invincible {
+	display: none;
+	position: absolute;
 }
 
 @media screen and (min-width: 850px) {
