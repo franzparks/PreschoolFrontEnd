@@ -22,8 +22,10 @@ export class AppComponent {
   navStyleOneCol = 'dropdown-grid-container';
   navStyleTwoCol = 'dropdown-grid-container dropdown-grid-container-two-column';
   navStyleThreeCol = 'dropdown-grid-container dropdown-grid-container-three-column';
+  yes = 'nav2';
+  no = 'nav2 visibility';
   navItems : NavItem[] = [];
-  visible : boolean = false; 
+  visible : boolean = true; 
   
   
   constructor( private menuService : MenuService){
@@ -32,6 +34,7 @@ export class AppComponent {
 
   toggleNav(){
      this.visible = !this.visible;
+     console.log("am clicked "+ this.visible);
   }
 
   

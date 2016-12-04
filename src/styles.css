@@ -212,6 +212,10 @@ main {
 
 }
 
+.visibility {
+	display: none;
+	position: absolute;
+}
 
 @media screen and (max-width: 842px) {
   .header__logo {
