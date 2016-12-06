@@ -204,8 +204,13 @@ main {
     padding: 25px;
 }
 
-.dropdown-content1 h3{
-	line-height: 1.25em;
+.dropdown-content h3{
+	font-weight: 300;
+	font-size: 1.75em;
+	text-align: center; 
+	margin: 0.5em 0.25em;
+	display: inline-block;
+	color: #212121;
 }
 
 .dropdown-content a {
