@@ -17,6 +17,7 @@
       
   </div>
 </header>
+<!--Mobile Nav-->
  <nav id="drawer2" [ngClass]="visible ?navVisible : navInvincible" >
     <ul class="nav__list">
       
@@ -49,7 +50,7 @@
                 <div  *ngIf="navItem.navLinksCol3">
                   <ul>
                     <li *ngFor="let linkItem of navItem.navLinksCol3">
-                      <a [routerLink]="linkItem.ref" class="">{{linkItem.label}}</a>
+                      <a [routerLink]="linkItem.ref" class="dropdown-toggle">{{linkItem.label}}</a>
                     </li>
           
                   </ul>
@@ -61,6 +62,7 @@
     </ul>
   </nav>
 
+ <!-- Desktop Nav-->
   <nav id="drawer" class="nav">
     <ul class="nav__list">
       <li  class="nav__item dropdown">
@@ -70,14 +72,14 @@
       <li class="nav__item dropdown" *ngFor="let navItem of navItems" dropdown>
         <a  href="#" class="dropdown-toggle" data-toggle="dropdown" dropdown-open>{{navItem.navTitle}}</a>
 
-          <ul>
+          <ul [ngClass]="navItem.id > 4 ?  menuStyleRight : menuStyleLeft">
 
-            <li>
-              <div class="">
-                <div class="">
+            <li [ngClass]="navItem.navLinksCol3 ?  navStyleThreeCol : navStyleOneCol" >
+              <div class="row">
+                <div class="col-sm-12">
                   <h3>{{navItem.navSubTitle}}</h3>
                 </div>
-                <div class="" *ngIf="navItem.navLinksCol1">
+                <div class="col-sm-4" *ngIf="navItem.navLinksCol1">
                   <ul>
                     <li *ngFor="let linkItem of navItem.navLinksCol1">
                       <a [routerLink]="linkItem.ref" class="nav-link">{{linkItem.label}}</a>
@@ -85,7 +87,7 @@
                   
                   </ul>
                 </div>
-                <div class="" *ngIf="navItem.navLinksCol2">
+                <div class="col-sm-4" *ngIf="navItem.navLinksCol2">
                   <ul>
                    <li *ngFor="let linkItem of navItem.navLinksCol2">
                       <a [routerLink]="linkItem.ref" class="nav-link">{{linkItem.label}}</a>
@@ -93,10 +95,10 @@
                     
                   </ul>
                 </div>
-                <div class="" *ngIf="navItem.navLinksCol3">
+                <div class="col-sm-4" *ngIf="navItem.navLinksCol3">
                   <ul>
                     <li *ngFor="let linkItem of navItem.navLinksCol3">
-                      <a [routerLink]="linkItem.ref" class="">{{linkItem.label}}</a>
+                      <a [routerLink]="linkItem.ref" class="dropdown-toggle">{{linkItem.label}}</a>
                     </li>
           
                   </ul>
