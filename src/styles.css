@@ -213,7 +213,9 @@ main {
     width: 100%;
 }
 
-/*@media screen and (max-width: 842px) {
+
+
+@media screen and (max-width: 842px) {
   
   .nav2 {
 	display: block;
@@ -260,7 +262,7 @@ main {
     width: 80%;
 }
 
-}*/
+}
 
 .invincible {
 	display: none;
