@@ -74,12 +74,12 @@
 
           <ul [ngClass]="navItem.id > 4 ?  menuStyleRight : menuStyleLeft">
 
-            <li [ngClass]="navItem.navLinksCol3 ?  navStyleThreeCol : navStyleOneCol" >
-              <div class="row">
-                <div class="col-sm-12">
+            <li>
+              <div class="dropdown-content">
+                <div>
                   <h3>{{navItem.navSubTitle}}</h3>
                 </div>
-                <div class="col-sm-4" *ngIf="navItem.navLinksCol1">
+                <div  *ngIf="navItem.navLinksCol1">
                   <ul>
                     <li *ngFor="let linkItem of navItem.navLinksCol1">
                       <a [routerLink]="linkItem.ref" class="nav-link">{{linkItem.label}}</a>
@@ -87,7 +87,7 @@
                   
                   </ul>
                 </div>
-                <div class="col-sm-4" *ngIf="navItem.navLinksCol2">
+                <div  *ngIf="navItem.navLinksCol2">
                   <ul>
                    <li *ngFor="let linkItem of navItem.navLinksCol2">
                       <a [routerLink]="linkItem.ref" class="nav-link">{{linkItem.label}}</a>
@@ -95,7 +95,7 @@
                     
                   </ul>
                 </div>
-                <div class="col-sm-4" *ngIf="navItem.navLinksCol3">
+                <div  *ngIf="navItem.navLinksCol3">
                   <ul>
                     <li *ngFor="let linkItem of navItem.navLinksCol3">
                       <a [routerLink]="linkItem.ref" class="dropdown-toggle">{{linkItem.label}}</a>
