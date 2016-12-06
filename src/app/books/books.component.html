@@ -23,7 +23,7 @@
 
 <div class="responsive" *ngFor="let book of books">
   <div class="img">
-    <a target="_blank" href="img_fjords.jpg">
+    <a href="" [routerLink]="['/book', book.id]">
       <img src="http://www.w3schools.com/css/img_fjords.jpg" alt="Trolltunga Norway" width="300" height="200">
     </a>
     <div class="desc">Add a description of the image here</div>
