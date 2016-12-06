@@ -26,7 +26,10 @@
     <a href="" [routerLink]="['/book', book.id]">
       <img src="http://www.w3schools.com/css/img_fjords.jpg" alt="Trolltunga Norway" width="300" height="200">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">
+    	<p>Title: {{book.name}}</p>
+		<p>Author: {{book.author}}</p>
+    </div>
   </div>
 </div>
 
