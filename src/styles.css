@@ -70,7 +70,7 @@ ul {
 
 .nav {
   width: 100%;
-  z-index: 999;
+  position: relative;
 }
 
 .nav__list {
@@ -87,11 +87,7 @@ ul {
   line-height: 24px;
   padding: 14px;
   text-transform: uppercase;
-  
-}
 
-.nav__item:hover {
-	position: relative;
 }
 
 
@@ -104,7 +100,6 @@ ul {
   text-decoration: underline;
   color: #212121;
 }
-
 
 /*
  *
@@ -203,9 +198,11 @@ main {
 	color: #212121;
 }
 
-.dropdown-content a {
+.dropdown-content  {
     padding: 12px 16px;
     text-decoration: none;
+    position: relative;
+    z-index: 1;   
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1}
