@@ -70,8 +70,7 @@ ul {
 
 .nav {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  z-index: 999;
 }
 
 .nav__list {
@@ -88,6 +87,11 @@ ul {
   line-height: 24px;
   padding: 14px;
   text-transform: uppercase;
+  
+}
+
+.nav__item:hover {
+	position: relative;
 }
 
 
