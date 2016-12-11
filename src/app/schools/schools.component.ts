@@ -10,6 +10,7 @@ import {SchoolService } from './school.service';
 export class SchoolsComponent implements OnInit {
 
 	schools: School[] = [];
+	items: any[] = [];
 
 	constructor(private schoolService : SchoolService) { }
 
