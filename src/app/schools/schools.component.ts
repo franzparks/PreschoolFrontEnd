@@ -16,6 +16,7 @@ export class SchoolsComponent implements OnInit {
 
 	ngOnInit() {
 		this.schoolService.getSchools().then(schools => this.schools = schools);
+		this.schoolService.getItems().then(items => this.items = items);
 	}
 
 }
