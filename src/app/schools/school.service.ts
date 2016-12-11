@@ -14,6 +14,7 @@ export class SchoolService {
 	//schools : School[] = SCHOOLS;
 
 	private schoolsUrl = 'app/schools'; //URL to web api
+	private itemsUrl   = 'app/items';
 
 	constructor(private http: Http) { }
 
