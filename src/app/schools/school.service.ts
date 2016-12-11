@@ -26,6 +26,15 @@ export class SchoolService {
                .catch(this.handleError);
 	}
 
+	getItems() : Promise<any[]> {
+		
+		return this.http.get(this.itemsUrl)
+               .toPromise()
+               .then(response => response.json().data as any[])
+               .catch(this.handleError);
+	}
+
+
 
 	getSchool(id: number): Promise<School> {
 	  	return this.getSchools()
