@@ -8,6 +8,7 @@ export class InMemoryDataService implements InMemoryDbService {
 	createDb() {
 			let schools = SCHOOLS;
 			let books = BOOKS;
+			let items = ITEMS;
 		return {schools, books};
 	}
 }
