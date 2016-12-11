@@ -16,6 +16,7 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
 const routes: Routes = [
 	{ path: '', redirectTo: '/books', pathMatch: 'full' },
   	{ path: 'schools',  component: SchoolsComponent },
+    { path: 'items',  component: SchoolsComponent },
   	{path: 'detail/:id', component: SchoolDetailComponent},
   	{ path: 'parenting',  component: ParentingComponent },
   	{ path: 'books',  component: BooksComponent },
