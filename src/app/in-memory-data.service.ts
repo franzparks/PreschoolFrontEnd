@@ -9,6 +9,6 @@ export class InMemoryDataService implements InMemoryDbService {
 			let schools = SCHOOLS;
 			let books = BOOKS;
 			let items = ITEMS;
-		return {schools, books};
+		return {schools, books,items};
 	}
 }
