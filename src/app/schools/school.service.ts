@@ -4,14 +4,10 @@ import { Headers, Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 
 import  {School} from './school';
-//import {SCHOOLS} from './mock-schools';
 
-//const SCHOOLS = []; //placeholder
 
 @Injectable()
 export class SchoolService {
-
-	//schools : School[] = SCHOOLS;
 
 	private schoolsUrl = 'app/schools'; //URL to web api
 	private itemsUrl   = 'app/items';
