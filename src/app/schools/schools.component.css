@@ -3,6 +3,10 @@
 	width: 100%; 
 }
 
+.school-img {
+ float: left;
+}
+
 .school-data {
 	float:right;
 }
