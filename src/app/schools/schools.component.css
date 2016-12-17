@@ -18,11 +18,9 @@
     width: 25%;
     height: auto;
     margin-right: 25px;
-    max-width: 200px;
-    max-height: 200px;
-
     
 }
 .school-content {
     width: 75%;
+    padding: 10px 0 10px 0;
 }
