@@ -1,13 +1,13 @@
-<div class="responsive">
+<div class="responsive" *ngFor="let school of items">
 
-<div class="img" *ngFor="let school of items">
-	<div class="school-row">
+<div class="img" >
+	<a>
+		<img src="{{school.pagemap.cse_image[0].src}}" width="600" height="250">
+	</a>
+	<div class="desc">
 		<h2>{{school.title}}</h2>
+		<p>{{school.snippet}}</p>
 	</div>
-	<p>{{school.snippet}}</p>
-	<div class="img">
-		<img src="{{school.pagemap.cse_image[0].src}}" width="300" height="250">
-	</div>
-
+	
 </div>
 </div>
