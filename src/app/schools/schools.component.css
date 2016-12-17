@@ -5,8 +5,12 @@
 
 .school-img {
  float: left;
+ width: 24.9999%;
+ margin: 6px;
 }
 
 .school-data {
 	float:right;
+	width: 76.9999%;
+	margin: 6px;
 }
