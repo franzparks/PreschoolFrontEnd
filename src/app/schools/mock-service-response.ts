@@ -47,6 +47,7 @@ export const ITEMS = [
     ]
    }
   },
+  /*
   {
    "kind": "customsearch#result",
    "title": "Google Maps",
@@ -441,5 +442,5 @@ export const ITEMS = [
      }
     ]
    }
-  }
+  }*/
  ];
