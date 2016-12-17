@@ -1,12 +1,12 @@
-<div class="container">
+<div class="responsive">
 
-<div class="row table" *ngFor="let school of items">
+<div class="img" *ngFor="let school of items">
 	<div class="school-row">
 		<h2>{{school.title}}</h2>
 	</div>
 	<p>{{school.snippet}}</p>
 	<div class="img">
-		<img src="{{school.pagemap.cse_image[0].src}}">
+		<img src="{{school.pagemap.cse_image[0].src}}" width="300" height="250">
 	</div>
 
 </div>
