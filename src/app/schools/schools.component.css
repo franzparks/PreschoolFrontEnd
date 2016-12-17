@@ -15,6 +15,10 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
+.school-row:hover {
+    border: 2px solid #777;
+}
+
 .school-image {
 	float: left;
     width: 25%;
