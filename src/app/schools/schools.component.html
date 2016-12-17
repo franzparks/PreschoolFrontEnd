@@ -1,10 +1,10 @@
-<div class="responsive" *ngFor="let school of items">
+<div class="school-row" *ngFor="let school of items">
 
-<div class="img" >
+<div class="img1" >
 	<a>
-		<img src="{{school.pagemap.cse_image[0].src}}" width="600" height="250">
+		<img src="{{school.pagemap.cse_image[0].src}}" width="300" height="250">
 	</a>
-	<div class="desc">
+	<div class="school-data">
 		<h2>{{school.title}}</h2>
 		<p>{{school.snippet}}</p>
 	</div>
