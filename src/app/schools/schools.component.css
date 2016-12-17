@@ -1,3 +1,9 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .school-row {
 	margin: 5px;
 	width: 100%; 
@@ -6,11 +12,13 @@
 .school-img {
  float: left;
  width: 24.9999%;
- margin: 6px;
+ padding: 10px;
+
 }
 
 .school-data {
-	float:right;
-	width: 76.9999%;
-	margin: 6px;
+
+	float:left;
+	width: 74.9999%;
+	padding: 10px;
 }
