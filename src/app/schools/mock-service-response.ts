@@ -47,7 +47,7 @@ export const ITEMS = [
     ]
    }
   },
-  /*
+  
   {
    "kind": "customsearch#result",
    "title": "Google Maps",
@@ -84,6 +84,7 @@ export const ITEMS = [
     ]
    }
   },
+  /*
   {
    "kind": "customsearch#result",
    "title": "North Seattle College Cooperative Preschools",
