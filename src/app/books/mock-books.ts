@@ -45,3 +45,5 @@ export const BOOKS : Book[] = [
 		author  : 'Clarissa Phiri',
 	},
 ];
+
+export const API  = [ { id: 1, name: 'Zambia', author: 'Francis Phiri' } ];//'http://localhost:8080/api/schools/all';
