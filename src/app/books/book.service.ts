@@ -12,7 +12,7 @@ export class BookService {
 
 	//books : Book[] = BOOKS;
 
-	private booksUrl = 'app/books';
+	private booksUrl = 'http://localhost:8080/api/schools/all';//'app/books';
 
 	constructor(private http: Http) { }
 
