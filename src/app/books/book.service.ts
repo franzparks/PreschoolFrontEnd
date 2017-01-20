@@ -12,7 +12,7 @@ export class BookService {
 
 	//books : Book[] = BOOKS;
 
-	private booksUrl = 'app/api';//'app/books';
+	private booksUrl = 'app/books';
 
 	constructor(private http: Http) { }
 
@@ -20,7 +20,7 @@ export class BookService {
 	  	//return Promise.resolve(this.books);
 	  	return this.http.get(this.booksUrl)
                .toPromise()
-               .then(response => response.json().data as Book[])
+               .then(response => response.json().data as Book[]) //response.json().data as Book[]
                .catch(this.handleError);
 	}
 
