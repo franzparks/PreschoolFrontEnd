@@ -9,6 +9,7 @@ export class InMemoryDataService implements InMemoryDbService {
 			let schools = SCHOOLS;
 			let books = BOOKS;
 			let items = ITEMS;
-		return {schools, books,items};
+			let api = 'http://localhost:8080/api/schools/all';
+		return {schools, books,items, api};
 	}
 }
