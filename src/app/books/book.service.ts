@@ -18,7 +18,7 @@ export class BookService {
 	//books : Book[] = BOOKS;
 
 	private booksUrl = 'app/books';
-	private templUrl = 'http://localhost:8080/api/schools/all';  
+	private templUrl = 'http://localhost:8080/api/schools';  
 
 	constructor(private http: Http) { }
 
@@ -30,9 +30,14 @@ export class BookService {
                .catch(this.handleError);
 	}
 
+	getBooksList() {
+    	let url = "http://localhost:8080/api/schools";
+    	return this.http.get(url, { withCredentials: false });
+  	}
+
 	getBooks1() : Observable<Book[]> {
         // ...using get request
-        return this.http.get(this.booksUrl)
+        return this.http.get(this.templUrl)
             // ...and calling .json() on the response to return data
              .map((res:Response) => res.json())
              //...errors if any
