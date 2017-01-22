@@ -22,7 +22,7 @@ export class BookService {
 
 	constructor(private http: Http) { }
 
-	getBooks1() : Promise<Book[]> {
+	getBooks() : Promise<Book[]> {
 	  	//return Promise.resolve(this.books);
 	  	return this.http.get(this.booksUrl)
                .toPromise()
@@ -30,11 +30,11 @@ export class BookService {
                .catch(this.handleError);
 	}
 
-	getBooks() : Observable<Book[]> {
+	getBooks1() : Observable<Book[]> {
         // ...using get request
         return this.http.get(this.booksUrl)
             // ...and calling .json() on the response to return data
-             .map((res:Response) => res.json().results)
+             .map((res:Response) => res.json())
              //...errors if any
              .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
 
