@@ -2,6 +2,11 @@ import { Injectable } from '@angular/core';
 
 import { Headers, Http, Response } from '@angular/http';
 
+import {Observable} from 'rxjs/Rx';
+
+// Import RxJs required methods
+import 'rxjs/add/operator/map';
+
 import 'rxjs/add/operator/toPromise';
 
 import {Book} from './book';
@@ -13,10 +18,11 @@ export class BookService {
 	//books : Book[] = BOOKS;
 
 	private booksUrl = 'app/books';
+	private templUrl = 'http://localhost:8080/api/schools/all';  
 
 	constructor(private http: Http) { }
 
-	getBooks() : Promise<Book[]> {
+	getBooks1() : Promise<Book[]> {
 	  	//return Promise.resolve(this.books);
 	  	return this.http.get(this.booksUrl)
                .toPromise()
@@ -24,9 +30,21 @@ export class BookService {
                .catch(this.handleError);
 	}
 
+	getBooks() : Observable<Book[]> {
+        // ...using get request
+        return this.http.get(this.booksUrl)
+            // ...and calling .json() on the response to return data
+             .map((res:Response) => res.json().results)
+             //...errors if any
+             .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
+
+     }
+
 	getBook(id: number): Promise<Book> {
-	  	return this.getBooks()
-	  				.then(books => books.find(book => book.id === id));
+		return  Promise.resolve(this.getBooks()[0]);
+	  	//return this.getBooks()
+	  				//.then(books => books.find(book => book.id === id));
+	  				//.map(books => books.find(book => book.id === id));
 	}
 
 	private handleError(error: any): Promise<any> {

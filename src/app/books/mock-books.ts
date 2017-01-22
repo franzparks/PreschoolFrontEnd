@@ -46,4 +46,5 @@ export const BOOKS : Book[] = [
 	},
 ];
 
-export const API  = [ { id: 1, name: 'Zambia', author: 'Francis Phiri' } ];//'http://localhost:8080/api/schools/all';
+//export const API  = [ { id: 1, name: 'Zambia', author: 'Francis Phiri' } ];//'http://localhost:8080/api/schools/all';
+export const API  = 'http://localhost:8080/api/schools/all';
