@@ -22,6 +22,11 @@ export class SchoolService {
             .catch(this.handleError);
 	}
 
+	getSchoolList() {
+    	let url = "http://localhost:8080/api/schoolList";
+    	return this.http.get(url, { withCredentials: true });
+  	}
+
 	getItems() : Promise<any[]> {
 		
 		return this.http.get(this.itemsUrl)
