@@ -18,8 +18,7 @@ export class BookService {
 	//books : Book[] = BOOKS;
 
 	private booksUrl = 'app/books';
-	private templUrl = 'http://localhost:8080/api/schools';  
-
+	
 	constructor(private http: Http) { }
 
 	getBooks() : Promise<Book[]> {
@@ -31,19 +30,10 @@ export class BookService {
 	}
 
 	getBooksList() {
-    	let url = "http://localhost:8080/api/bookList";
-    	return this.http.get(url, { withCredentials: true });
+    	//let url = "http://localhost:8080/api/bookList";
+    	//return this.http.get(url, { withCredentials: true });
   	}
 
-	getBooks1() : Observable<Book[]> {
-        // ...using get request
-        return this.http.get(this.templUrl)
-            // ...and calling .json() on the response to return data
-             .map((res:Response) => res.json())
-             //...errors if any
-             .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
-
-     }
 
 	getBook(id: number): Promise<Book> {
 		return  Promise.resolve(this.getBooks()[0]);
