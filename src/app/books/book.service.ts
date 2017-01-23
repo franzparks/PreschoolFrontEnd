@@ -31,8 +31,8 @@ export class BookService {
 	}
 
 	getBooksList() {
-    	let url = "http://localhost:8080/api/schools";
-    	return this.http.get(url, { withCredentials: false });
+    	let url = "http://localhost:8080/api/bookList";
+    	return this.http.get(url, { withCredentials: true });
   	}
 
 	getBooks1() : Observable<Book[]> {
