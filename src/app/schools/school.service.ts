@@ -9,8 +9,7 @@ import  {School} from './school';
 @Injectable()
 export class SchoolService {
 
-	private schoolsUrl = 'app/schools'; //URL to web api
-	private itemsUrl   = 'app/items';
+	private schoolsUrl = 'http://localhost:8080/api/schoolList';//'app/schools'; //URL to web api
 
 	constructor(private http: Http) { }
 
@@ -24,7 +23,7 @@ export class SchoolService {
 
 	getSchoolList() {
     	let url = "http://localhost:8080/api/schoolList";
-    	return this.http.get(url, { withCredentials: true });
+    	return this.http.get(this.schoolsUrl, { withCredentials: true });
   	}
 
 	getItems() : Promise<any[]> {
