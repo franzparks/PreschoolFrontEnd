@@ -22,18 +22,9 @@ export class SchoolService {
 	}
 
 	getSchoolList() {
-    	let url = "http://localhost:8080/api/schoolList";
+    
     	return this.http.get(this.schoolsUrl, { withCredentials: true });
   	}
-
-	getItems() : Promise<any[]> {
-		
-		return this.http.get(this.itemsUrl)
-            .toPromise()
-            .then(response => response.json().data as any[])
-            .catch(this.handleError);
-	}
-
 
 
 	getSchool(id: number): Promise<School> {
