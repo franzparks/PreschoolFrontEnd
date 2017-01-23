@@ -22,15 +22,15 @@ export class BooksComponent implements OnInit {
 			//console.log(book)
 		//);
 
-		this.bookService.getBooksList().subscribe(
-			res => {
+		//this.bookService.getBooksList().subscribe(
+		//	res => {
         		//this.books = JSON.parse(JSON.parse(JSON.stringify(res))._body);
         		
         		//console.log(JSON.parse(JSON.stringify(res)));
         	
-      		},
-      		error => console.log(error)
-		)
+      	//	},
+      	//	error => console.log(error)
+		//)
 	}
 
 }
