@@ -3,14 +3,14 @@ import { Component } from '@angular/core';
 import { NavItem } from './nav-item';
 import { MenuService } from './menu.service';
 
-import {DropdownModule} from "ng2-dropdown";
+//import {DropdownModule} from "ng2-dropdown";
 
 
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css',String('../styles.css')],
+  //styleUrls: ['./app.component.css',String('../styles.css')],
 
 })
 
